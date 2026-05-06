@@ -1,7 +1,7 @@
-``` bash 
+<pre>
 ├── 1. IDENTITIES (Principals)
 │   │
-│   ├── [Root User](#root-user)
+│   ├── <a href="#root-user">Root User</a>
 │   │
 │   ├── [IAM Users](#iam-users)
 │   │     ├── Console password
@@ -32,7 +32,7 @@
 │         │
 │         └── Instance Profiles
 
-```
+</pre>
 
 ---
 
@@ -43,6 +43,7 @@
 Understand **who is making requests in AWS** and how identities are structured.
 
 <h1 id="root-user">🧱 1. Root User</h1>
+
 ### 📘 Definition
 
 The **Root User** is the original identity created when you open an Amazon Web Services account.
@@ -57,8 +58,9 @@ The **Root User** is the original identity created when you open an Amazon Web S
 
 > If you are using root daily, you're doing it wrong.
 
----
+
  <h1 id="iam--users">👤 2. IAM Users</h1>
+ 
 ### 📘 Definition
 
 An **IAM User** is a **long-term identity** for a person or application.
@@ -80,8 +82,9 @@ An **IAM User** is a **long-term identity** for a person or application.
 
 👉 In real companies, users are often replaced by **federation (later topic)**
 
----
+
 # 👥 3. IAM Groups
+
 
 ### 📘 Definition
 
@@ -104,8 +107,8 @@ Group: adminsPolicy: AdministratorAccessUsers: eduardo-admin, sarah-admin
 > You attach permissions to **groups, not users** (best practice)
 
 
----
 # 🎭 4. IAM Roles
+
 
 ### 📘 Definition
 
@@ -131,4 +134,3 @@ A **Role** is an identity that is **assumed temporarily**.
 
 > Roles are the **most important concept in IAM**
 
----
