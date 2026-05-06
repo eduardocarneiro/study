@@ -1,6 +1,7 @@
 
 **Mental MAP - AWS Identity and Access Management (IAM)**
 
+```bash 
 AWS IAM
 │
 ├── 1. IDENTITIES (Principals)
@@ -268,3 +269,4 @@ AWS IAM
     ├── Use Access Analyzer
     │
     └── Use federation for workforce access
+```
