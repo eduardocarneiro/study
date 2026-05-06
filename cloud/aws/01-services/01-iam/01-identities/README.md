@@ -3,7 +3,7 @@
 │   │
 │   ├── <a href="#root-user">Root User</a>
 │   │
-│   ├── [IAM Users](#iam-users)
+│   ├── IAM Users → <a href="#iam-users">here</a>
 │   │     ├── Console password
 │   │     ├── Access keys
 │   │     ├── MFA devices
@@ -36,11 +36,13 @@
 
 ---
 
+
 # 🚀 PHASE 1 — **IDENTITIES (Principals)**
 
 ## 🎯 Goal
 
 Understand **who is making requests in AWS** and how identities are structured.
+
 
 <h1 id="root-user">🧱 1. Root User</h1>
 
@@ -116,11 +118,11 @@ A **Role** is an identity that is **assumed temporarily**.
 
 ### 🔥 Key difference vs User
 
-|User|Role|
-|---|---|
-|Permanent|Temporary|
-|Has credentials|Uses temporary credentials|
-|Assigned to a person|Assumed by entities|
+| User                 | Role                       |
+| -------------------- | -------------------------- |
+| Permanent            | Temporary                  |
+| Has credentials      | Uses temporary credentials |
+| Assigned to a person | Assumed by entities        |
 
 ### 📦 Types (intro level)
 
