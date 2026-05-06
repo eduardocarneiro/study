@@ -1,4 +1,4 @@
-
+``` bash 
 ├── 1. IDENTITIES (Principals)
 │   │
 │   ├── Root User
@@ -32,6 +32,8 @@
 │         │
 │         └── Instance Profiles
 
+```
+
 ---
 
 # 🚀 PHASE 1 — **IDENTITIES (Principals)**
@@ -40,7 +42,7 @@
 
 Understand **who is making requests in AWS** and how identities are structured.
 
---- 
+
 # 🧱 1. Root User
 
 ### 📘 Definition
@@ -58,7 +60,6 @@ The **Root User** is the original identity created when you open an Amazon Web S
 > If you are using root daily, you're doing it wrong.
 
 
-----
 # 👤 2. IAM Users
 
 ### 📘 Definition
