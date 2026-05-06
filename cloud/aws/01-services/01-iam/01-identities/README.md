@@ -1,7 +1,7 @@
 <pre>
 ├── 1. IDENTITIES (Principals)
 │   │
-│   ├── <a href="#root-user">Root User</a>
+│   ├── Root User → <a href="#root-user">here</a>
 │   │
 │   ├── IAM Users → <a href="#iam-users">here</a>
 │   │     ├── Console password
@@ -11,11 +11,11 @@
 │   │     ├── Permissions
 │   │     └── SSH keys (CodeCommit)
 │   │
-│   ├── IAM Groups
+│   ├── IAM Groups → <a href="#iam-groups">here</a>
 │   │     ├── Attach policies
 │   │     └── Organize users
 │   │
-│   └── IAM Roles
+│   └── IAM Roles → <a href="#iam-roles">here</a>
 │         │
 │         ├── Service Roles
 │         │     ├── EC2 roles
@@ -31,7 +31,6 @@
 │         ├── Service-Linked Roles
 │         │
 │         └── Instance Profiles
-
 </pre>
 
 ---
@@ -42,9 +41,7 @@
 ## 🎯 Goal
 
 Understand **who is making requests in AWS** and how identities are structured.
-
-
-<h1 id="root-user">🧱 1. Root User</h1>
+<br><h1 id="root-user">🧱 1. Root User</h1>
 
 ### 📘 Definition
 
@@ -84,9 +81,7 @@ An **IAM User** is a **long-term identity** for a person or application.
 
 👉 In real companies, users are often replaced by **federation (later topic)**
 
-
-# 👥 3. IAM Groups
-
+<h1 id="iam-groups">👥 3. IAM Groups</h1>
 
 ### 📘 Definition
 
@@ -109,7 +104,7 @@ Group: adminsPolicy: AdministratorAccessUsers: eduardo-admin, sarah-admin
 > You attach permissions to **groups, not users** (best practice)
 
 
-# 🎭 4. IAM Roles
+<h1 id="iam-roles">🎭 4. IAM Roles</h1>
 
 
 ### 📘 Definition
