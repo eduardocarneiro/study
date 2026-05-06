@@ -83,3 +83,61 @@ An **IAM User** is a **long-term identity** for a person or application.
 - Individual access (labs, learning)
 
 👉 In real companies, users are often replaced by **federation (later topic)**
+
+
+# 👥 3. IAM Groups
+
+### 📘 Definition
+
+A **Group** is a collection of IAM Users.
+
+### 🎯 Purpose
+
+- Assign permissions **once**
+- Apply to **multiple users**
+
+### ✅ Example
+
+```
+Group: adminsPolicy: AdministratorAccessUsers: eduardo-admin, sarah-admin
+```
+
+---
+
+### 🧠 Key rule
+
+> You attach permissions to **groups, not users** (best practice)
+
+
+
+# 🎭 4. IAM Roles
+
+### 📘 Definition
+
+A **Role** is an identity that is **assumed temporarily**.
+
+### 🔥 Key difference vs User
+
+|User|Role|
+|---|---|
+|Permanent|Temporary|
+|Has credentials|Uses temporary credentials|
+|Assigned to a person|Assumed by entities|
+
+---
+
+### 📦 Types (intro level)
+
+- **Service Roles** → Used by AWS services (EC2, Lambda)
+- **Cross-account Roles** → Access between accounts
+- **Federation Roles** → External identities
+- **Service-linked Roles** → Auto-created by AWS
+- **Instance Profiles** → Roles attached to EC2
+
+---
+
+### 🧠 Real-world insight
+
+> Roles are the **most important concept in IAM**
+
+
