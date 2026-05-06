@@ -1,9 +1,9 @@
 ``` bash 
 ├── 1. IDENTITIES (Principals)
 │   │
-│   ├── Root User
+│   ├── [Root User](#root-user)
 │   │
-│   ├── IAM Users
+│   ├── [IAM Users](#iam-users)
 │   │     ├── Console password
 │   │     ├── Access keys
 │   │     ├── MFA devices
@@ -42,9 +42,7 @@
 
 Understand **who is making requests in AWS** and how identities are structured.
 
-
-# 🧱 1. Root User
-
+<h1 id="root-user">🧱 1. Root User</h1>
 ### 📘 Definition
 
 The **Root User** is the original identity created when you open an Amazon Web Services account.
@@ -59,9 +57,8 @@ The **Root User** is the original identity created when you open an Amazon Web S
 
 > If you are using root daily, you're doing it wrong.
 
-
-# 👤 2. IAM Users
-
+---
+ <h1 id="iam--users">👤 2. IAM Users</h1>
 ### 📘 Definition
 
 An **IAM User** is a **long-term identity** for a person or application.
@@ -75,7 +72,6 @@ An **IAM User** is a **long-term identity** for a person or application.
 - **Permissions** → Defined via policies
 - **SSH keys (CodeCommit)** → Git access
 
----
 
 ### 🧠 When to use
 
@@ -84,7 +80,7 @@ An **IAM User** is a **long-term identity** for a person or application.
 
 👉 In real companies, users are often replaced by **federation (later topic)**
 
-
+---
 # 👥 3. IAM Groups
 
 ### 📘 Definition
@@ -102,14 +98,13 @@ A **Group** is a collection of IAM Users.
 Group: adminsPolicy: AdministratorAccessUsers: eduardo-admin, sarah-admin
 ```
 
----
 
 ### 🧠 Key rule
 
 > You attach permissions to **groups, not users** (best practice)
 
 
-
+---
 # 🎭 4. IAM Roles
 
 ### 📘 Definition
@@ -124,8 +119,6 @@ A **Role** is an identity that is **assumed temporarily**.
 |Has credentials|Uses temporary credentials|
 |Assigned to a person|Assumed by entities|
 
----
-
 ### 📦 Types (intro level)
 
 - **Service Roles** → Used by AWS services (EC2, Lambda)
@@ -134,10 +127,8 @@ A **Role** is an identity that is **assumed temporarily**.
 - **Service-linked Roles** → Auto-created by AWS
 - **Instance Profiles** → Roles attached to EC2
 
----
-
 ### 🧠 Real-world insight
 
 > Roles are the **most important concept in IAM**
 
-
+---
