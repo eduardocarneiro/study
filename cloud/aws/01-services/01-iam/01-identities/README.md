@@ -105,10 +105,9 @@ Group: adminsPolicy: AdministratorAccessUsers: eduardo-admin, sarah-admin
 ### 🧠 Key rule
 
 > You attach permissions to **groups, not users** (best practice)
-<div style="margin-top: 20px;"></div>
 
 
-
+<h1 id="iam-roles">🎭 4. IAM Roles</h1>
 ### 📘 Definition
 
 A **Role** is an identity that is **assumed temporarily**.
