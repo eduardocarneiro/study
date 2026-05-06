@@ -35,14 +35,16 @@
 
 ---
 
-<div style="margin-top: 20px;"></div>
+
+
 # 🚀 PHASE 1 — **IDENTITIES (Principals)**
 
 ## 🎯 Goal
 
 Understand **who is making requests in AWS** and how identities are structured. 
-<div style="margin-top: 20px;"></div>
+
 <h1 id="root-user">🧱 1. Root User</h1>
+
 ### 📘 Definition
 
 The **Root User** is the original identity created when you open an Amazon Web Services account.
@@ -56,7 +58,8 @@ The **Root User** is the original identity created when you open an Amazon Web S
 ### 🚫 Real-world rule
 
 > If you are using root daily, you're doing it wrong.
-<div style="margin-top: 20px;"></div>
+
+
  <h1 id="iam--users">👤 2. IAM Users</h1>
  
 ### 📘 Definition
@@ -80,7 +83,7 @@ An **IAM User** is a **long-term identity** for a person or application.
 
 👉 In real companies, users are often replaced by **federation (later topic)**
 
-<div style="margin-top: 20px;"></div>
+
 <h1 id="iam-groups">👥 3. IAM Groups</h1>
 
 ### 📘 Definition
@@ -103,7 +106,7 @@ Group: adminsPolicy: AdministratorAccessUsers: eduardo-admin, sarah-admin
 
 > You attach permissions to **groups, not users** (best practice)
 <div style="margin-top: 20px;"></div>
-<h1 id="iam-roles">🎭 4. IAM Roles</h1>
+
 
 
 ### 📘 Definition
