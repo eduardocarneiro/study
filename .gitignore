@@ -1,8 +1,8 @@
 # --- Repositórios e Diretórios Independentes ---
 # Bloqueia o rastreamento das pastas completas pelo repositório pai
-study/cloud/aws/02-aws-exams
-study/cloud/azure/02-azure-exams
-study/cloud/google/02-google-exams
+cloud/aws/02-aws-exams
+cloud/azure/02-azure-exams
+cloud/google/02-google-exams
 
 # --- Arquivos de Sistema ---
 .DS_Store

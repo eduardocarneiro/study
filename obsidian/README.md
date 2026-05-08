@@ -9,8 +9,8 @@ This topic will explain how I am using Obsidian and the structure used.
 ## 📚 Obsidian Repository Structure
 <pre>
 obsidian-notes → <a href="http://gitlab.lab.local/obsidian/obsidian-notes">GitLab</a>
-├── csl
-├── pessoal
+├── csl → <a href="http://gitlab.lab.local/obsidian/csl.git">GitLab</a>
+├── pessoal → <a href="http://gitlab.lab.local/obsidian/pessoal.git">GitLab</a>
 └── study → <a href="http://gitlab.lab.local/obsidian/study">GitLab</a> | <a href="https://github.com/eduardocarneiro/study.git">Github</a>
     ├── cloud
     │   ├── aws
