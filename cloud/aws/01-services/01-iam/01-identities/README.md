@@ -132,3 +132,83 @@ A **Role** is an identity that is **assumed temporarily**.
 
 > Roles are the **most important concept in IAM**
 
+
+### 🔧 **Service Roles**
+📘 Definition
+
+A Service Role is a role assumed by an AWS service to perform actions on your behalf.
+🧠 Mental model
+
+    “I (user) allow AWS service X to act for me”
+
+📦 Examples
+
+  *  EC2 accessing S3
+  *  Lambda writing logs to CloudWatch
+  *  ECS pulling images from ECR
+
+🔄 Flow (important)
+
+ 1.   You create a role
+ 2. You attach permissions (policy)
+ 3. You allow a service to assume it (trust policy)
+ 4. The service uses it automatically
+
+🔥 Real example
+
+`EC2 → Role → S3`
+
+No access keys needed.
+
+⚠️ Key insight
+
+    This replaces hardcoded credentials → critical security concept
+
+### 🌐 **Cross-Account Roles**
+
+### 📘 Definition
+
+A role that allows **one AWS account to access another AWS account**
+
+---
+
+### 🧠 Mental model
+
+> “Account A trusts Account B”
+
+---
+
+### 🔄 Flow
+
+1. Account A creates a role
+2. Trust policy allows Account B
+3. Account B assumes the role via STS
+
+---
+
+### 📦 Example
+
+```
+Company Account (A)   ↑   | AssumeRole   ↓Dev Account (B)
+```
+
+---
+
+### ⚠️ Key concept
+
+- Uses:
+    - `sts:AssumeRole`
+- Requires:
+    - **Trust Policy**
+
+---
+
+### 🔥 Real-world use
+
+- Multi-account architecture
+- Central security account
+- CI/CD pipelines accessing other accounts
+
+---
+
+---
