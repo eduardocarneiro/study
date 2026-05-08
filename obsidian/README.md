@@ -14,11 +14,20 @@ obsidian-notes → <a href="http://gitlab.lab.local/obsidian/obsidian-notes">Git
 └── study → <a href="http://gitlab.lab.local/obsidian/study">GitLab</a> | <a href="https://github.com/eduardocarneiro/study.git">Github</a>
     ├── cloud
     │   ├── aws
-    │   │   └── 01-services
-    │   │       └── 01-iam
+    │   │   ├── 01-services
+    │   │   │   └── 01-iam
+    │   │   └── 02-aws-exams → <a href="http://gitlab.lab.local/obsidian/02-aws-exams.git">GitLab</a>
     │   ├── azure
+    │   │   ├── 01-services
+    │   │   └── 02-azure-exams → <a href="http://gitlab.lab.local/obsidian/02-azure-exams.git">GitLab</a>
     │   ├── google
+    │   │   ├── 01-services
+    │   │   └── 02-google-exams → <a href="http://gitlab.lab.local/obsidian/02-google-exams">GitLab</a>
     │   └── projects
+    │       ├── project-aws-01-aaa → <a href="http://gitlab.lab.local/obsidian">GitLab</a> | <a href="https://github.com/eduardocarneiro/study.git">Github</a>
+    │       ├── project-aws-02-bbb → <a href="http://gitlab.lab.local/obsidian">GitLab</a> | <a href="https://github.com/eduardocarneiro/study.git">Github</a>
+    │       ├── project-azure-01-aaa → <a href="http://gitlab.lab.local/obsidian">GitLab</a> | <a href="https://github.com/eduardocarneiro/study.git">Github</a>
+    │       └── project-google-01-aaa → <a href="http://gitlab.lab.local/obsidian">GitLab</a> | <a href="https://github.com/eduardocarneiro/study.git">Github</a>
     ├── code
     ├── devops
     │   ├── 01-kubernetes
@@ -31,7 +40,10 @@ obsidian-notes → <a href="http://gitlab.lab.local/obsidian/obsidian-notes">Git
     │   ├── 02-ci-cd
     │   ├── 03-gitops
     │   ├── 04-iac
-    │   └── 05-git
+    │   ├── 05-git
+    │   └── projects
+    │       ├── project-devops-01-aaa → <a href="http://gitlab.lab.local/obsidian">GitLab</a> | <a href="https://github.com/eduardocarneiro/study.git">Github</a>
+    │       └── project-devops-02-bbb → <a href="http://gitlab.lab.local/obsidian">GitLab</a> | <a href="https://github.com/eduardocarneiro/study.git">Github</a>
     ├── obsidian
     ├── os
     ├── readme
@@ -39,4 +51,14 @@ obsidian-notes → <a href="http://gitlab.lab.local/obsidian/obsidian-notes">Git
 </pre>
 
 > to get this structure above I used the command `tree -d -L 5 obsidian-notes`
+
+## **How to work with Obsidian and repositories Git**
+
+### **obsidian-notes** 
+
+### **csl**
+
+### **pessoal**
+
+### **study**
 
