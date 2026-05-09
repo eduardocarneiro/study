@@ -163,6 +163,8 @@ eduardo@eoc:~/obsidian-notes$ git clone http://gitlab.lab.local/obsidian/study.g
 eduardo@eoc:~/obsidian-notes$ cd study/
 ```
 
+> by the way, do the same procedure for all repositories you are using inside the `study`  repository. 
+
 3.  create a `study` repository on Github
 	It was created on `https://github.com/eduardocarneiro/study.git`
 
@@ -171,7 +173,36 @@ eduardo@eoc:~/obsidian-notes$ cd study/
 eduardo@eoc:~/obsidian-notes/study$ git remote set-url github https://github.com/eduardocarneiro/study.git
 ```
 
-5.  set up the global credential 
+5.  create the `.gitignore`
+
+	Do not forget to include all external repositories. For example the path `cloud/aws/02-aws-exams`  will be another repository inside gitlab and github.
+
+	```bash 
+eduardo@eoc:~/obsidian-notes/study$ pwd
+/home/eduardo/obsidian-notes/study
+
+eduardo@eoc:~/obsidian-notes/study$ cat .gitignore 
+# --- Repositórios e Diretórios Independentes ---
+# Bloqueia o rastreamento das pastas completas pelo repositório pai
+cloud/aws/02-aws-exams
+cloud/azure/02-azure-exams
+cloud/google/02-google-exams
+cloud/projects/project-aws-01-aaa
+cloud/projects/project-aws-02-bbb
+cloud/projects/project-azure-01-aaa
+cloud/projects/project-google-01-aaa
+devops/projects/project-devops-01-aaa
+devops/projects/project-devops-02-aaa
+
+# --- Arquivos de Sistema ---
+.DS_Store
+Thumbs.db
+*.tmp
+eduardo@eoc:~/obsidian-notes/study$ 
+
+	```
+
+6. set up the global credential 
 
 	Type the command below once and it will store the your credential inside the file `~/.git-credentials` , after you first push
 
