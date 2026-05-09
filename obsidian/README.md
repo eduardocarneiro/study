@@ -379,4 +379,69 @@ After create the alias do not forget to run `source ~/.bashrc`.
 
 To do your commit, you just need to run the command `commit`  inside the repository you did an update.
 
+Below you can see `git status` , just to check the changes, then command `commit` .  
+
+It will suggest you a commit message, and will ask you if you what to edit the message, just type `Enter` if It suggested message is OK. 
+![[Pasted image 20260508231638.png]]
+
+It will also ask you if you confirm the commit and if you want to commit in gitlab, github or both. As we added the credentials locally before, we do not need to type user and password all the time. 
+
+```bash 
+eduardo@eoc:~/obsidian-notes/study$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   obsidian/README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+eduardo@eoc:~/obsidian-notes/study$ commit
+
+📂 Arquivos:
+obsidian/README.md
+
+📊 Stats:
+  +240 / -0
+
+💡 Sugestão:
+  docs(obsidian): update README.md documentation (+240/-0)
+
+✏️  Editar mensagem (Enter = aceitar): 
+
+🚀 Commit:
+  docs(obsidian): update README.md documentation (+240/-0)
+
+Confirmar commit? (y/n): y
+[main fe1e77c] docs(obsidian): update README.md documentation (+240/-0)
+ 1 file changed, 240 insertions(+)
+
+🌐 Para onde enviar?
+1) origin (GitLab)
+2) github
+3) ambos
+
+Escolha (1/2/3): 3
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 3.50 KiB | 3.50 MiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+To http://gitlab.lab.local/obsidian/study.git
+   67597ff..fe1e77c  main -> main
+Enumerating objects: 21, done.
+Counting objects: 100% (21/21), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (12/12), 4.15 KiB | 4.15 MiB/s, done.
+Total 12 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/eduardocarneiro/study.git
+   aac88e6..fe1e77c  main -> main
+
+✅ Done.
+
+```
 
