@@ -177,7 +177,7 @@ eduardo@eoc:~/obsidian-notes/study$ git remote set-url github https://github.com
 
 	Do not forget to include all external repositories. For example the path `cloud/aws/02-aws-exams`  will be another repository inside gitlab and github.
 
-	```bash 
+```bash 
 eduardo@eoc:~/obsidian-notes/study$ pwd
 /home/eduardo/obsidian-notes/study
 
@@ -199,8 +199,7 @@ devops/projects/project-devops-02-aaa
 Thumbs.db
 *.tmp
 eduardo@eoc:~/obsidian-notes/study$ 
-
-	```
+```
 
 6. set up the global credential 
 
