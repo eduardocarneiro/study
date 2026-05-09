@@ -140,3 +140,243 @@ eduardo@eoc:~/obsidian-notes$ git clone http://gitlab.lab.local/obsidian/pessoal
 
 ### **study**
 
+The Study repository will be used to document all tests I do to learn things.
+
+This repository is a private and public repository that is stored in my Gitlab Local and in my Github, as you can see below:
+
+```bash 
+eduardo@eoc:~/obsidian-notes/study$ git remote -v
+github	https://github.com/eduardocarneiro/study.git (fetch)
+github	https://github.com/eduardocarneiro/study.git (push)
+origin	http://gitlab.lab.local/obsidian/study.git (fetch)
+origin	http://gitlab.lab.local/obsidian/study.git (push)
+
+```
+
+**What I did to work with both repositories:**
+1. create a `study` repository on Gitlab local
+	It was created on `http://gitlab.lab.local/obsidian/study.git`
+
+2. clone it inside `obsidian-notes` directory
+```bash 
+eduardo@eoc:~/obsidian-notes$ git clone http://gitlab.lab.local/obsidian/study.git
+eduardo@eoc:~/obsidian-notes$ cd study/
+```
+
+3.  create a `study` repository on Github
+	It was created on `https://github.com/eduardocarneiro/study.git`
+
+4. set a new remote git repository to `study` directory cloned before
+```bash 
+eduardo@eoc:~/obsidian-notes/study$ git remote set-url github https://github.com/eduardocarneiro/study.git
+```
+
+5.  set up the global credential 
+
+	Type the command below once and it will store the your credential inside the file `~/.git-credentials` , after you first push
+
+```bash 
+eduardo@eoc:~/obsidian-notes/study$ git config --global credential.helper store
+
+eduardo@eoc:~/obsidian-notes/study$ git remote -v
+github	https://github.com/eduardocarneiro/study.git (fetch)
+github	https://github.com/eduardocarneiro/study.git (push)
+origin	http://gitlab.lab.local/obsidian/study.git (fetch)
+origin	http://gitlab.lab.local/obsidian/study.git (push)
+
+eduardo@eoc:~/obsidian-notes/study$ git push origin 
+
+eduardo@eoc:~/obsidian-notes/study$ git push github
+
+```
+
+**To make the life easier I created the script below:**
+```bash 
+eduardo@eoc:~/obsidian-notes/study$ cat /home/eduardo/my-scripts/commit_v4.sh
+#!/bin/bash
+
+# =========================
+# 🔧 CONFIG
+# =========================
+DEFAULT_REMOTE="origin"
+
+# =========================
+# 📥 ADD
+# =========================
+git add .
+
+files=$(git diff --cached --name-only)
+
+if [ -z "$files" ]; then
+  echo "Nada para commit"
+  exit 0
+fi
+
+# =========================
+# 📁 SCOPE INTELIGENTE
+# =========================
+scope=""
+
+if echo "$files" | grep -qi "aws"; then
+  if echo "$files" | grep -qi "iam"; then
+    scope="aws-iam"
+  else
+    scope="aws"
+  fi
+elif echo "$files" | grep -qi "kubernetes\|k8s"; then
+  scope="k8s"
+elif echo "$files" | grep -qi "terraform"; then
+  scope="terraform"
+else
+  scope=$(echo "$files" | awk -F/ '{print $1}' | sort | uniq | tr '\n' '-' | sed 's/-$//')
+fi
+
+# =========================
+# 🔍 TYPE DETECTION
+# =========================
+type="chore"
+
+diff_content=$(git diff --cached)
+
+if echo "$files" | grep -qi "\.md"; then
+  type="docs"
+elif echo "$diff_content" | grep -qi "fix\|bug\|error"; then
+  type="fix"
+elif echo "$diff_content" | grep -qi "refactor\|rename"; then
+  type="refactor"
+elif echo "$files" | grep -qi "\.sh\|\.yaml\|\.yml"; then
+  type="chore"
+else
+  type="feat"
+fi
+
+# =========================
+# 📊 DIFF STATS
+# =========================
+added=$(git diff --cached --numstat | awk '{add+=$1} END {print add}')
+removed=$(git diff --cached --numstat | awk '{del+=$2} END {print del}')
+
+# =========================
+# 🧠 SMART DESCRIPTION
+# =========================
+main_file=$(echo "$files" | head -n 1)
+filename=$(basename "$main_file")
+
+# tenta extrair contexto mais humano
+if echo "$main_file" | grep -qi "iam"; then
+  context="IAM"
+elif echo "$main_file" | grep -qi "ec2"; then
+  context="EC2"
+elif echo "$main_file" | grep -qi "s3"; then
+  context="S3"
+else
+  context="$filename"
+fi
+
+# descrição base
+if [ "$type" == "docs" ]; then
+  description="update $context documentation"
+elif [ "$type" == "fix" ]; then
+  description="fix issue in $context"
+elif [ "$type" == "refactor" ]; then
+  description="refactor $context"
+elif [ "$type" == "feat" ]; then
+  description="add/update $context"
+else
+  description="update $context"
+fi
+
+# =========================
+# ✨ FINAL MESSAGE
+# =========================
+commit_msg="$type($scope): $description (+$added/-$removed)"
+
+# =========================
+# 🖥️ PREVIEW
+# =========================
+echo ""
+echo "📂 Arquivos:"
+echo "$files"
+echo ""
+
+echo "📊 Stats:"
+echo "  +$added / -$removed"
+echo ""
+
+echo "💡 Sugestão:"
+echo "  $commit_msg"
+echo ""
+
+# editar
+read -p "✏️  Editar mensagem (Enter = aceitar): " user_msg
+
+if [ -n "$user_msg" ]; then
+  commit_msg="$user_msg"
+fi
+
+echo ""
+echo "🚀 Commit:"
+echo "  $commit_msg"
+echo ""
+
+read -p "Confirmar commit? (y/n): " confirm
+if [ "$confirm" != "y" ]; then
+  echo "Cancelado."
+  exit 0
+fi
+
+# =========================
+# 💾 COMMIT
+# =========================
+git commit -m "$commit_msg"
+
+# =========================
+# 🌐 ESCOLHA DO REMOTE
+# =========================
+echo ""
+echo "🌐 Para onde enviar?"
+echo "1) origin (GitLab)"
+echo "2) github"
+echo "3) ambos"
+echo ""
+
+read -p "Escolha (1/2/3): " remote_choice
+
+case $remote_choice in
+  1)
+    git push origin
+    ;;
+  2)
+    git push github
+    ;;
+  3)
+    git push origin
+    git push github
+    ;;
+  *)
+    echo "Opção inválida. Usando padrão: $DEFAULT_REMOTE"
+    git push $DEFAULT_REMOTE
+    ;;
+esac
+
+echo ""
+echo "✅ Done."
+
+```
+
+**How to use it**
+
+Create the script in some place in your machine. In my case I am holding my scripts inside the directory `/home/eduardo/my-scripts/` . The name of the script is `commit_v4.sh` , and I added it as a alias on `~/.bashrc` , like you can see below:
+```bash 
+eduardo@eoc:~/obsidian-notes/study$ grep -A 2 "gitlab" /home/eduardo/.bashrc
+# Commit gitlab and github
+#alias commit='/home/eduardo/my-scripts/commit.sh'
+alias commit='/home/eduardo/my-scripts/commit_v4.sh'
+
+```
+
+After create the alias do not forget to run `source ~/.bashrc`.
+
+To do your commit, you just need to run the command `commit`  inside the repository you did an update.
+
+
