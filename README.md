@@ -19,24 +19,24 @@ study → <a href="http://gitlab.lab.local/obsidian/study">GitLab</a> | <a href=
 │       └── project-google-01-aaa → <a href="http://gitlab.lab.local/obsidian">GitLab</a> | <a href="https://github.com/eduardocarneiro/study.git">Github</a>
 ├── code
 ├── devops
-    │   ├── 01-kubernetes
-    │   │   ├── 01-k8s
-    │   │   ├── 02-openshift
-    │   │   ├── 03-eks
-    │   │   ├── 04-aks
-    │   │   ├── 05-gke
-    │   │   └── 06-k3s
-    │   ├── 02-ci-cd
-    │   ├── 03-gitops
-    │   ├── 04-iac
-    │   ├── 05-git
-    │   └── projects
-    │       ├── project-devops-01-aaa → <a href="http://gitlab.lab.local/obsidian">GitLab</a> | <a href="https://github.com/eduardocarneiro/study.git">Github</a>
-    │       └── project-devops-02-bbb → <a href="http://gitlab.lab.local/obsidian">GitLab</a> | <a href="https://github.com/eduardocarneiro/study.git">Github</a>
-    ├── obsidian
-    ├── os
-    ├── readme
-    └── web3
+│   ├── 01-kubernetes
+│   │   ├── 01-k8s
+│   │   ├── 02-openshift
+│   │   ├── 03-eks
+│   │   ├── 04-aks
+│   │   ├── 05-gke
+│   │   └── 06-k3s
+│   ├── 02-ci-cd
+│   ├── 03-gitops
+│   ├── 04-iac
+│   ├── 05-git
+│   └── projects
+│       ├── project-devops-01-aaa → <a href="http://gitlab.lab.local/obsidian">GitLab</a> | <a href="https://github.com/eduardocarneiro/study.git">Github</a>
+│       └── project-devops-02-bbb → <a href="http://gitlab.lab.local/obsidian">GitLab</a> | <a href="https://github.com/eduardocarneiro/study.git">Github</a>
+├── obsidian
+├── os
+├── readme
+└── web3
 </pre>
 
 > to get this structure above I used the command `tree -d -L 5 obsidian-notes`
