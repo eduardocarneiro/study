@@ -98,7 +98,7 @@ A **Group** is a collection of IAM Users.
 ### ✅ Example
 
 ```
-Group: adminsPolicy: AdministratorAccessUsers: eduardo-admin, sarah-admin
+Group: adminsPolicy: AdministratorAccessUsers: user01-admin, user02-admin
 ```
 
 
@@ -132,7 +132,7 @@ A **Role** is an identity that is **assumed temporarily**.
 
 > Roles are the **most important concept in IAM**
 
-
+---
 ### 🔧 **Service Roles**
 📘 Definition
 
@@ -164,19 +164,18 @@ No access keys needed.
 
     This replaces hardcoded credentials → critical security concept
 
+---
 ### 🌐 **Cross-Account Roles**
 
 ### 📘 Definition
 
 A role that allows **one AWS account to access another AWS account**
 
----
 
 ### 🧠 Mental model
 
 > “Account A trusts Account B”
 
----
 
 ### 🔄 Flow
 
@@ -184,7 +183,6 @@ A role that allows **one AWS account to access another AWS account**
 2. Trust policy allows Account B
 3. Account B assumes the role via STS
 
----
 
 ### 📦 Example
 
@@ -192,7 +190,6 @@ A role that allows **one AWS account to access another AWS account**
 Company Account (A)   ↑   | AssumeRole   ↓Dev Account (B)
 ```
 
----
 
 ### ⚠️ Key concept
 
@@ -201,7 +198,6 @@ Company Account (A)   ↑   | AssumeRole   ↓Dev Account (B)
 - Requires:
     - **Trust Policy**
 
----
 
 ### 🔥 Real-world use
 
@@ -210,4 +206,91 @@ Company Account (A)   ↑   | AssumeRole   ↓Dev Account (B)
 - CI/CD pipelines accessing other accounts
 
 ---
+## 🔐 3. Federation Roles
 
+### 📘 Definition
+
+Roles used by **external identity providers** (IdP)
+
+### 🧠 Mental model
+
+> “Login outside AWS → get temporary access inside AWS”
+
+
+### 📦 Identity Providers
+
+- Active Directory
+- Okta
+- Azure AD
+- Google
+- GitHub (OIDC)
+
+### 🔄 Flow
+
+1. User logs in to external system
+2. IdP authenticates user
+3. AWS trusts IdP
+4. User assumes role via:
+    - SAML
+    - OIDC
+
+
+### 🔥 Example
+
+```
+User → Okta → AWS Role → Access AWS
+```
+
+
+### ⚠️ Key insight
+
+> No IAM users needed → **enterprise standard**
+
+---
+
+## 🖥️ 5. Instance Profiles
+
+### 📘 Definition
+
+A container for a role that is attached to an EC2 instance
+
+### 🤯 Important (confusing part)
+
+> EC2 **does not attach a role directly**  
+> It attaches an **Instance Profile**
+
+### 🧠 Mental model
+
+```
+EC2 → Instance Profile → Role → Permissions
+```
+
+
+### 🔄 Flow
+
+1. Create role
+2. AWS automatically creates instance profile
+3. Attach to EC2
+4. EC2 gets temporary credentials
+
+### 🔥 Real example
+
+```
+EC2 → S3 (without access keys)
+```
+
+### ⚠️ Key insight
+
+> Instance Profile = bridge between EC2 and IAM Role
+
+---
+
+# 🧠 🔥 COMPARISON (THIS IS GOLD)
+
+|Type|Used by|Purpose|Credentials|
+|---|---|---|---|
+|Service Role|AWS service|Act on your behalf|Temporary|
+|Cross-account|Another account|Access between accounts|Temporary|
+|Federation|External users|SSO login|Temporary|
+|Service-linked|AWS service|Internal AWS operations|Managed|
+|Instance Profile|EC2|Attach role to EC2|Temporary|
