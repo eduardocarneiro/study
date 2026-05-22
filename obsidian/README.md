@@ -13,7 +13,9 @@ obsidian-notes → <a href="http://gitlab.lab.local/obsidian/obsidian-notes">Git
     │   ├── aws
     │   │   ├── 01-services
     │   │   │   └── 01-iam
-    │   │   └── 02-aws-exams → <a href="http://gitlab.lab.local/obsidian/02-aws-exams.git">GitLab</a>
+    │   │   └── 02-aws-exams
+    │   │       └── 01-saa-c03
+    │   │           └── 01-saa-c03-tutorialdojo → <a href="http://gitlab.lab.local/obsidian/01-saa-c03-tutorialdojo.git">GitLab</a>
     │   ├── azure
     │   │   ├── 01-services
     │   │   └── 02-azure-exams → <a href="http://gitlab.lab.local/obsidian/02-azure-exams.git">GitLab</a>
@@ -184,15 +186,23 @@ eduardo@eoc:~/obsidian-notes/study$ pwd
 eduardo@eoc:~/obsidian-notes/study$ cat .gitignore 
 # --- Repositórios e Diretórios Independentes ---
 # Bloqueia o rastreamento das pastas completas pelo repositório pai
-cloud/aws/02-aws-exams
-cloud/azure/02-azure-exams
-cloud/google/02-google-exams
+# Ignorar todas as subpastas dentro de 01-saa-c03, mas manter arquivos da raiz dela
+cloud/aws/02-aws-exams/01-saa-c03/*/
+#cloud/aws/02-aws-exams
+#cloud/azure/02-azure-exams
+#cloud/google/02-google-exams
 cloud/projects/project-aws-01-aaa
 cloud/projects/project-aws-02-bbb
 cloud/projects/project-azure-01-aaa
 cloud/projects/project-google-01-aaa
 devops/projects/project-devops-01-aaa
 devops/projects/project-devops-02-aaa
+
+# --- Arquivos de Sistema ---
+.DS_Store
+Thumbs.db
+*.tmp
+
 
 # --- Arquivos de Sistema ---
 .DS_Store
