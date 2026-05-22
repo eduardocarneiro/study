@@ -66,4 +66,3 @@ SAA-C03-solutions-architect-associate
         ├── 02-cost-explorer-analysis [AWS Cost Explorer]
         └── 03-compute-optimizer-right-sizing [AWS Compute Optimizer]
     </pre>
-
