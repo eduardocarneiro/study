@@ -1,5 +1,5 @@
 
-# ☁️ AWS Studies - Eduardo Carneiro
+# ☁️ AWS Studies 
 
 ## 🚀 Objective
 Deepen knowledge of AWS services with focus on architecture, security, automation, and scalability.
