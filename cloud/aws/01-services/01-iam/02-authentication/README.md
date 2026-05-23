@@ -30,11 +30,11 @@ This phase answers:
 
 > “How does AWS verify who you are?”
 
-# 🧠 BIG PICTURE
+## 🧠 BIG PICTURE
 
 Authentication in Amazon Web Services is about proving identity before authorization happens.
 
-# 🔄 Authentication vs Authorization
+## 🔄 Authentication vs Authorization
 
 | Concept        | Question           |
 | -------------- | ------------------ |
