@@ -122,6 +122,7 @@ IAM supports:
 
 ---
 <h1 id="access-keys">🔑 2. Access Keys</h1>
+
 ## 📘 Definition
 
 Access keys are long-term credentials used for:
@@ -222,6 +223,7 @@ Linux/macOS:
 
 ---
 <h1 id="temporary-credentials">⏳ 3. Temporary Credentials</h1>
+
 ## 📘 Definition
 
 Short-lived credentials generated dynamically via:
@@ -286,6 +288,7 @@ They generate temporary credentials dynamically.
 
 ---
 <h1 id="mfa">🔐 4. Multi-Factor Authentication (MFA)</h1>
+
 ## 📘 Definition
 
 MFA adds:
