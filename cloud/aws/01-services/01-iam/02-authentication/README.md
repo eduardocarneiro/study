@@ -1,16 +1,16 @@
 
 <pre>
-├── 2. AUTHENTICATION
+├── 2. AUTHENTICATION → <a href="#authentication">here</a>
 │   │
-│   ├── Console login
+│   ├── Console login → <a href="#console-login">here</a>
 │   │
-│   ├── Access keys
+│   ├── Access keys → <a href="#access-keys">here</a>
 │   │     ├── Access Key ID
 │   │     └── Secret Access Key
 │   │
-│   ├── Temporary credentials
+│   ├── Temporary credentials → <a href="#temporary-credentials">here</a>
 │   │
-│   └── Multi-Factor Authentication (MFA)
+│   └── Multi-Factor Authentication (MFA) → <a href="#mfa">here</a>
 │         ├── Virtual MFA
 │         ├── Hardware MFA
 │         ├── FIDO2 security keys
@@ -20,7 +20,9 @@
 ---
 
 
-# 🔐 PHASE 2 — AUTHENTICATION
+
+
+<h1 id="authentication">🔐 PHASE 2 — AUTHENTICATION</h1>
 
 ## 🎯 Goal
 
@@ -43,7 +45,8 @@ Authentication in Amazon Web Services is about proving identity before authoriza
 
 
 
-# 🖥️ 1. Console Login
+---
+<h1 id="console-login">🖥️ 1. Console Login</h1>
 
 ## 📘 Definition
 
@@ -117,8 +120,8 @@ IAM supports:
 
 
 
-# 🔑 2. Access Keys
-
+---
+<h1 id="access-keys">🔑 2. Access Keys</h1>
 ## 📘 Definition
 
 Access keys are long-term credentials used for:
@@ -217,8 +220,8 @@ Linux/macOS:
 
 
 
-# ⏳ 3. Temporary Credentials
-
+---
+<h1 id="temporary-credentials">⏳ 3. Temporary Credentials</h1>
 ## 📘 Definition
 
 Short-lived credentials generated dynamically via:
@@ -281,8 +284,8 @@ They generate temporary credentials dynamically.
 
 
 
-# 🔐 4. Multi-Factor Authentication (MFA)
-
+---
+<h1 id="mfa">🔐 4. Multi-Factor Authentication (MFA)</h1>
 ## 📘 Definition
 
 MFA adds:
