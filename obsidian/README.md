@@ -49,7 +49,7 @@ obsidian-notes → <a href="http://gitlab.lab.local/obsidian/obsidian-notes">Git
     └── web3
 </pre>
 
-> to get this structure above I used the command `tree -d -L 5 obsidian-notes`
+> to get this structure above I used the command `tree -d -L 6 obsidian-notes`
 
 
 ## **How to work with Obsidian and repositories Git**
