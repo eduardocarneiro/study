@@ -42,6 +42,7 @@ Authentication in Amazon Web Services is about proving identity before authoriza
 | Authorization  | “What can you do?” |
 
 
+
 # 🖥️ 1. Console Login
 
 ## 📘 Definition
@@ -85,7 +86,7 @@ Okta / Azure AD / Google → AWS
 
 Enterprise standard.
 
-# 🧠 Important concepts
+## 🧠 Important concepts
 
 ## Account Alias
 
@@ -115,6 +116,7 @@ IAM supports:
 > Leaving console access enabled for programmatic-only users
 
 
+
 # 🔑 2. Access Keys
 
 ## 📘 Definition
@@ -127,7 +129,7 @@ Access keys are long-term credentials used for:
 - Terraform
 - Automation
 
-# 🧩 Components
+## 🧩 Components
 
 ## 🪪 Access Key ID
 
@@ -149,20 +151,20 @@ Example:
 wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 ```
 
-# 🧠 Mental model
+## 🧠 Mental model
 
 ```
 Username = Access Key 
 IDPassword = Secret Access Key
 ```
 
-# 🔄 Flow
+## 🔄 Flow
 
 ```
 CLI/SDK → Signed Request → AWS validates signature
 ```
 
-# ⚠️ CRITICAL SECURITY CONCEPT
+## ⚠️ CRITICAL SECURITY CONCEPT
 
 ## Access Keys are dangerous because:
 
@@ -170,11 +172,11 @@ CLI/SDK → Signed Request → AWS validates signature
 - Often hardcoded
 - Frequently leaked to GitHub
 
-# 🚫 Best practice
+## 🚫 Best practice
 
 > Prefer Roles + Temporary Credentials over Access Keys
 
-# 🔥 Real-world example
+## 🔥 Real-world example
 
 ## Bad
 
@@ -189,7 +191,7 @@ Hardcoded inside application.
 EC2 Role → Temporary Credentials
 ```
 
-# 🧠 Important operational concepts
+## 🧠 Important operational concepts
 
 ## Key Rotation
 
@@ -214,6 +216,7 @@ Linux/macOS:
 ```
 
 
+
 # ⏳ 3. Temporary Credentials
 
 ## 📘 Definition
@@ -224,7 +227,7 @@ Short-lived credentials generated dynamically via:
 - STS
 - Federation
 
-# 🧠 This is the modern AWS security model
+## 🧠 This is the modern AWS security model
 
 Instead of:
 
@@ -246,7 +249,7 @@ Temporary credentials contain:
 - Secret Access Key
 - Session Token
 
-# 🤯 New concept: Session Token
+## 🤯 New concept: Session Token
 
 Temporary credentials require:
 
@@ -256,13 +259,13 @@ Session Token
 
 This proves the credentials are temporary.
 
-# 🔄 Flow
+## 🔄 Flow
 
 ```
 User/Service → AssumeRole → STS → Temporary Credentials
 ```
 
-# 📦 Real examples
+## 📦 Real examples
 
 |Service|Uses Temporary Credentials|
 |---|---|
@@ -270,11 +273,12 @@ User/Service → AssumeRole → STS → Temporary Credentials
 |Lambda Role|Yes|
 |EKS IRSA|Yes|
 |AWS SSO|Yes|
-# ⚠️ Key insight
+## ⚠️ Key insight
 
 > Roles do NOT have passwords or access keys
 
 They generate temporary credentials dynamically.
+
 
 
 # 🔐 4. Multi-Factor Authentication (MFA)
@@ -289,16 +293,16 @@ Something you know
 Something you have
 ```
 
-# 🧠 Mental model
+## 🧠 Mental model
 
 ```
 Password alone = weak
 Password + MFA = strong
 ```
 
-# 📦 MFA TYPES
+## 📦 MFA TYPES
 
-# 📱 Virtual MFA
+## 📱 Virtual MFA
 
 ## Examples
 
@@ -314,7 +318,7 @@ Login → Enter TOTP Code → Access granted
 
 🧠 Most common MFA type
 
-# 🔑 Hardware MFA
+## 🔑 Hardware MFA
 
 ## 📘 Definition
 
@@ -330,7 +334,7 @@ Physical device generating authentication codes.
 - High-security environments
 - Compliance-heavy companies
 
-# 🛡️ FIDO2 Security Keys
+## 🛡️ FIDO2 Security Keys
 
 ## 📘 Definition
 
@@ -341,21 +345,21 @@ Modern phishing-resistant hardware authentication.
 - YubiKey
 - Titan Security Key
 
-# 🔥 Key advantage
+## 🔥 Key advantage
 
 Resistant to:
 
 - Phishing
 - Credential replay
 
-# 🧠 Enterprise-grade MFA
+## 🧠 Enterprise-grade MFA
 
 Preferred for:
 
 - Admin access
 - Privileged accounts
 
-# 🔐 U2F Keys
+## 🔐 U2F Keys
 
 ## 📘 Definition
 
@@ -367,7 +371,7 @@ Older standard for hardware-based MFA.
 U2F → predecessor of FIDO2
 ```
 
-# 🧠 AUTHENTICATION FLOW (VERY IMPORTANT)
+## 🧠 AUTHENTICATION FLOW (VERY IMPORTANT)
 
 ```
 1. Identity provides credentials
@@ -377,8 +381,7 @@ U2F → predecessor of FIDO2
 5. Authorization evaluation begins
 ```
 
-
-# 🧠 WHAT YOU JUST LEARNED
+## 🧠 WHAT YOU JUST LEARNED
 
 |Topic|Learned|
 |---|---|
@@ -387,7 +390,7 @@ U2F → predecessor of FIDO2
 |Temporary Credentials|Secure ephemeral access|
 |MFA|Strong authentication|
 |STS Identity|Identity validation|
-# ⚠️ COMMON MISTAKES
+## ⚠️ COMMON MISTAKES
 
 - Hardcoding access keys
 - No MFA on admin users
@@ -395,7 +398,7 @@ U2F → predecessor of FIDO2
 - Using root access keys
 - Long-lived credentials in CI/CD
 
-# 🔥 CERTIFICATION-LEVEL INSIGHT
+## 🔥 CERTIFICATION-LEVEL INSIGHT
 
 ## AWS best practice:
 
@@ -404,6 +407,7 @@ Humans → Federation + MFA
 Applications → Roles
 Avoid → Long-term Access Keys
 ```
+
 
 
 ---
