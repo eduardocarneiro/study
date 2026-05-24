@@ -1,4 +1,4 @@
-
+``
 <pre>
 ├── 3. AUTHORIZATION (POLICIES)
 │   │
@@ -170,7 +170,8 @@ Inline policies:
 ### 🧠 **Mental model**
 
 ```
-Managed Policy = reusableInline Policy = one-to-one
+Managed Policy = reusable
+Inline Policy = one-to-one
 ```
 
 ### 📦 **Identity-Based Policy Example**
@@ -186,4 +187,119 @@ Managed Policy = reusableInline Policy = one-to-one
     }
   ]
 }
+```  
+
+## 🪣 2. Resource-Based Policies
+
+### 📘 **Definition**
+
+Policies attached directly to resources.
+
+### 🧠 **Mental model**
+
 ```
+Resource defines who can access it
+```
+
+### 📦 **Examples**
+
+|Resource|Policy Type|
+|---|---|
+|S3 Bucket|Bucket Policy|
+|Lambda|Resource Policy|
+|KMS|Key Policy|
+|SNS|Topic Policy|
+|SQS|Queue Policy|
+
+# 🔥 Example — S3 Bucket Policy
+
+```JSON
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::my-bucket/*"
+    }
+  ]
+}
+```
+
+### 🤯 **NEW CONCEPT - Principal**
+
+### 📘 Definition
+
+Defines:
+
+```
+WHO receives permissions
+```
+
+### 📦 **Examples**
+
+### Everyone
+
+```JSON
+"Principal": "*"
+```
+
+### Specific Account
+
+```JSON
+"Principal": {  "AWS": "123456789012"}
+```
+
+### Specific Role
+
+```JSON
+"Principal": {  "AWS": "arn:aws:iam::123456789012:role/MyRole"}
+```
+
+### ⚠️ **Critical difference**
+
+|Identity Policy|Resource Policy|
+|---|---|
+|Attached to identity|Attached to resource|
+|No Principal needed|Principal required|
+
+## 🚧 3. Permissions Boundaries
+
+### 📘 **Definition**
+
+A policy that defines:
+
+```
+Maximum allowed permissions
+```
+
+### 🧠 **Mental model**
+
+```
+Permissions Boundary = permission ceiling
+```
+
+### 🔥 **Example**
+
+Developer can create roles BUT:
+
+- cannot exceed allowed boundary
+
+# ⚠️ Important
+
+Boundary does NOT grant permissions.
+
+It LIMITS permissions.
+
+### 🧩 **Evaluation logic**
+
+```
+Allowed Permissions
+=
+Identity Policy
+INTERSECT
+Permissions Boundary
+```
+
+
