@@ -5,14 +5,17 @@ Explore blockchain technologies, decentralized infrastructure, and Web3 developm
 
 ## 🧠 Core Skills
 - Blockchain
+-  Infrastructure
 - Rust
 - Solidity
 - Smart Contracts
-- Infrastructure
 - Distributed Systems
 
 ## 📂 Structure
-Content related to blockchain, decentralized networks, and the Web3 ecosystem.
+
+### web3
+└── 01-blockchains
+    └── 01-hyperledger-besu
 
 ## 📂 Featured Projects
 - Blockchain Infrastructure
