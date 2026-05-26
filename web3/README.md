@@ -13,9 +13,11 @@ Explore blockchain technologies, decentralized infrastructure, and Web3 developm
 
 ## 📂 Structure
 
-### web3
+```bash 
+web3
 └── 01-blockchains
     └── 01-hyperledger-besu
+```
 
 ## 📂 Featured Projects
 - Blockchain Infrastructure
