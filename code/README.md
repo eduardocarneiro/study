@@ -12,6 +12,7 @@ Develop programming, automation, and infrastructure tooling skills for cloud and
 - JAVA
 - HTML/CSS
 - Javascript
+- Markdown
 
 ## 📂 Structure
 Content related to programming, scripting, automation, and supporting tools.
