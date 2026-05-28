@@ -12,12 +12,18 @@ Explore blockchain technologies, decentralized infrastructure, and Web3 developm
 - Distributed Systems
 
 ## 📂 Structure
-
-```bash 
-web3
+<pre>   
+web3/
 └── 01-blockchains
-    └── 01-hyperledger-besu
-```
+    ├── 01-blockchain
+    ├── 02-web3-concept
+    └── 03-hyperledger-besu
+        ├── 01-certification
+        └── 02-projects
+            ├── 01-blockchain-besu-on-openshift
+            ├── 02-blockchain-besu-on-kubernetes-vanilla
+            └── 03-blockchain-besu-on-aws-eks
+</pre>
 
 ## 📂 Featured Projects
 - Blockchain Infrastructure
