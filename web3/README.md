@@ -34,8 +34,3 @@ web3/
 ## 🌎 Professional Goal
 Work with blockchain infrastructure and next-generation distributed systems.
 
-## ✏️ References
-
-* Real Digital e a utilização de Hyperledger Besu na AWS: https://aws.amazon.com/pt/blogs/aws-brasil/real-digital-e-a-utilizacao-de-hyperledger-besu-na-aws/
-
-* AWS Besu Real Digital: https://github.com/aws-samples/aws-besu-realdigital/tree/main
