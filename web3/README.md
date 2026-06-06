@@ -22,10 +22,16 @@ web3/
         └── 02-projects
             ├── 01-blockchain-hyperledger-besu-on-openshift
             ├── 02-blockchain-hyperledger-besu-on-kubernetes-vanilla
-            └── 03-blockchain-hyperledger-besu-on-aws-eks
+            ├── 03-blockchain-hyperledger-besu-on-aws-eks
             ├── 04-blockchain-hyperledger-fabric-on-openshift
             ├── 05-blockchain-hyperledger-fabric-on-kubernetes-vanilla
-            └── 06-blockchain-hyperledger-fabric-on-aws-eks
+            ├── 06-blockchain-hyperledger-fabric-on-aws-eks
+            ├── 07-blockchain-stellar-on-openshift
+            ├── 08-blockchain-stellar-on-kubernetes-vanilla
+            ├── 09-blockchain-stellar-on-aws-eks
+            ├── 10-blockchain-solana-on-openshift
+            ├── 11-blockchain-solana-on-kubernetes-vanilla
+            └── 12-blockchain-solana-on-aws-eks
 </pre>
 
 ## 📂 Featured Projects
