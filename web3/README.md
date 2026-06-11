@@ -10,6 +10,7 @@ Explore blockchain technologies, decentralized infrastructure, and Web3 developm
 - Solidity
 - Smart Contracts
 - Distributed Systems
+- IPFS
 
 ## 📂 Structure
 <pre>   
