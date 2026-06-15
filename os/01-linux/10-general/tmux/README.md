@@ -69,4 +69,8 @@ references:
 [Tmux Cheat Sheet & Quick Reference | Session, window, pane and more](https://tmuxcheatsheet.com/)
 [tmux Cheat Sheet - Quick Reference Guide for All Commands | tmux Tutorial & Complete Guide](https://tmux.info/docs/cheatsheet)
 
+[NerdFonts](https://www.nerdfonts.com/cheat-sheet)
 
+[tmux nerd font window name plugin](https://github.com/joshmedeski/tmux-nerd-font-window-name)
+
+[awesome-tmux](https://github.com/rothgar/awesome-tmux)**
