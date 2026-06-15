@@ -96,3 +96,5 @@ references:
 [tmux nerd font window name plugin](https://github.com/joshmedeski/tmux-nerd-font-window-name)
 
 [awesome-tmux](https://github.com/rothgar/awesome-tmux)**
+
+[.tmux/README.md at master · gpakosz/.tmux · GitHub](https://github.com/gpakosz/.tmux)
