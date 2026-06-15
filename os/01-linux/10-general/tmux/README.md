@@ -92,4 +92,3 @@ references:
 [tmux Cheat Sheet - Quick Reference Guide for All Commands | tmux Tutorial & Complete Guide](https://tmux.info/docs/cheatsheet)
 
 
-	commi
