@@ -47,3 +47,13 @@ artificial-intelligence/
 
 ## 🌎 Professional Goal
 Design, deploy, and master self-hosted local AI infrastructure and seamlessly integrate offline intelligent workflows into remote dev environments.
+
+## Links
+
+[Hugging Face](https://huggingface.co/)
+[Voice Chatbot / The Coding Train](https://thecodingtrain.com/tracks/transformers-js/188-voice-chatbot)
+[Is AI Profitable Yet?](https://isaiprofitable.com/)
+[GitHub - pewdiepie-archdaemon/odysseus: Self-hosted AI workspace. · GitHub](https://github.com/pewdiepie-archdaemon/odysseus)
+
+
+
