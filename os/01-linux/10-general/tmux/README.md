@@ -64,6 +64,7 @@ The highest level of organization. It allows you to separate completely differen
 
 - You can have a session called "Web-Dev" (with windows for frontend and backend) and another called "Sysadmin" (with SSH access to servers), switching between them instantly.
 
+
 ### **3. Copy Mode and History (Copy Mode)** 
 
 tmux has its own scrollback buffer, which solves the problem of terminal emulators that freeze or limit screen scrolling.
@@ -74,6 +75,7 @@ tmux has its own scrollback buffer, which solves the problem of terminal emulato
 
 - **Multiple Copy Buffers**: Copy text from one pane and paste it into another. tmux keeps a history of the most recently copied texts.
 
+
 ### **4. Customization, Scripting, and Automation** 
 
 tmux is highly programmable and integrates seamlessly with other terminal utilities.
@@ -83,6 +85,7 @@ tmux is highly programmable and integrates seamlessly with other terminal utilit
 - **Mouse Integration**: You can enable mouse support to resize panes, switch between tabs, and scroll through history by clicking and dragging.
 
 - **Scriptable via CLI**: Any tmux command can be executed directly from the terminal (e.g., `tmux new-window -n 'logs' 'tail -f error.log'`). This allows you to create Bash scripts that open your entire development environment with a single command.
+
 
 ### **5. Advanced Features**
 
@@ -103,11 +106,12 @@ tmux is highly programmable and integrates seamlessly with other terminal utilit
 > NOTE:
 > If you are using tmux alongside `Neovim` and terminal tools, a common community recommendation is to map pane navigation so that `Ctrl+arrows` (or `hjkl`) works seamlessly to navigate both between Neovim splits and between the panes of tmux itself!
 
+
 ## ⚙️ Setup a Nice `.tmux.conf` Configuration
 
 To have something nice like the picture below,  follow this session to setup you nice `.tmux.conf`
 
-![[Pasted image 20260617002143.png]]
+![](_attachments/Pasted%20image%2020260617002143.png)
 
 The `~/.tmux.conf` file is the central control script for Tmux. It executes every time you start a new Tmux server. 
 
@@ -118,6 +122,7 @@ The `~/.tmux.conf` file is the central control script for Tmux. It executes ever
 
 
 ```
+
 
 ## ⌨️ Tmux Command Reference
 
