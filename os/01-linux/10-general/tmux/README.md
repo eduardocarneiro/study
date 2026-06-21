@@ -10,7 +10,7 @@ Tmux organizes your workflow into a clean hierarchy of three levels:
 * **Panes:** Split screens inside a single window, allowing you to view processes side-by-side.
 
 
-Click [here](./tmux.md) to learn more about tmux
+Click [here](tmux.md) to learn more about tmux
 
 
 
