@@ -11,7 +11,7 @@ Tmux organizes your workflow into a clean hierarchy of three levels:
 
 Click [here](tmux.md) to learn more about tmux
 
-<br>
+
 ## ⚙️ Setup a Nice `.tmux.conf` Configuration
 
 To have a nice **Tmux** like the picture below,  I created three files.

@@ -1,4 +1,63 @@
 
+The `.tmux.conf` file is tmux's control center. It works like a startup script: every time you start a tmux server, it reads this file (usually located in the user's home folder: `~/.tmux.conf`) to apply your customization preferences, shortcuts, and default behaviors.
+
+Below, I answer your questions in detail.
+
+**1. What are the options for tmux.conf?**
+
+The options you can define inside `.tmux.conf` are mainly divided into three categories of commands:
+
+- **`set-option` (or `set`):** Defines global or session options. It affects the general behavior of tmux (e.g., enabling the mouse, changing the starting index number of windows).
+
+- **`set-window-option` (or `setw`):** Defines specific options for windows and panes (e.g., enabling Vim-style shortcuts in copy mode, changing the background color of an active window).
+
+- **`bind-key` (or `bind`):** Used to map or remap keyboard shortcuts (keybindings).
+
+
+**2. What is possible to do with tmux.conf?**
+
+The flexibility of tmux is huge. With `.tmux.conf`, you can:
+
+- **Change the "Prefix" key:** Change the default `Ctrl+b` shortcut to something more ergonomic, like `Ctrl+a`.
+
+- **Enable mouse support:** Allow you to click on tabs (windows), resize panes by dragging their edges, and use the mouse wheel to scroll through history.
+
+- **Customize the Status Bar:** Change the colors, content, and format of what is displayed in the footer (such as CPU usage, date, time, session name).
+
+- **Vim-style shortcuts:** Configure the copy/scroll mode to respond to classic Vim commands (`h`, `j`, `k`, `l` to navigate, `v` to select, `y` to copy).
+
+- **Automate behaviors:** Change the base index of windows and panes to start at 1 instead of 0 (which feels much more anatomical on the keyboard).
+
+- **Create new shortcuts:** Define specific keys to split the screen more intuitively (e.g., using `|` for vertical split and `-` for horizontal split).
+
+
+**3. Configuration example to customize the status bar**
+
+The tmux status bar is essentially divided into three parts: the left side (`status-left`), the window list in the middle (`window-status`), and the right side (`status-right`).
+    
+
+Requirements:
+
+*  Font [JetBrainMono](https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.zip)
+
+Below is the Slackware way to do it.
+
+```
+eduardo@eoc:~$ mkdir JetBrainsMonoNerd
+
+eduardo@eoc:~$ cd JetBrainsMonoNerd
+
+eduardo@eoc:~/JetBrainsMonoNerd$ wget https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.zip
+
+eduardo@eoc:~/JetBrainsMonoNerd$ unzip JetBrainsMono.zip 
+
+eduardo@eoc:~/JetBrainsMonoNerd$ su -c "mkdir -p /usr/share/fonts/TTF/JetBrainsMonoNerd
+
+eduardo@eoc:~/JetBrainsMonoNerd$ su -c "cp *.ttf /usr/share/fonts/TTF/JetBrainsMonoNerd/"
+
+eduardo@eoc:~/JetBrainsMonoNerd$ fc-cache -fv
+
+```
 
 
 The `~/.tmux.conf` file is the central control script for Tmux. It executes every time you start a new Tmux server. 
@@ -76,6 +135,7 @@ esac
 
 ```
 
+
 The `~/.tmux-window-icon.sh` file is responsible to replace the icons on the Active Windows
 
 ```
@@ -87,10 +147,17 @@ PROCESS_NAME=$1
 # Chooses the icon based on the active program running in the window
 case "$PROCESS_NAME" in
     bash|zsh|fish|sh) echo "  " ;; # Terminal shells
-    vim|nvim|nano)    echo "󟤵 " ;; # Text editors
+    vim|nvim|nano)    echo " " ;; # Text editors
     ssh)              echo "󰖟 " ;; # Network / SSH connections
     git)              echo " " ;; # Version control
     python|node)      echo " " ;; # Programming environments
     *)                echo " " ;; # Default fallback icon
 esac
 ```
+
+
+---
+
+> NOTE: You can safety copy the content of the files above . After install NerdFont, your code will look like the picture below:
+
+![](_attachments/Pasted%20image%2020260621175207.png)
