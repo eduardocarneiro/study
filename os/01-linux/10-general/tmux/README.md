@@ -9,12 +9,9 @@ Tmux organizes your workflow into a clean hierarchy of three levels:
 * **Windows:** Tabs within a session that occupy the full terminal view.
 * **Panes:** Split screens inside a single window, allowing you to view processes side-by-side.
 
-
 Click [here](tmux.md) to learn more about tmux
 
-
-
-
+<br>
 ## ⚙️ Setup a Nice `.tmux.conf` Configuration
 
 To have a nice **Tmux** like the picture below,  I created three files.
