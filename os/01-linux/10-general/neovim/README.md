@@ -96,4 +96,5 @@ root@eoc:~# sbopkg -i ripgrep
 
 
 
-
+reltio
+40/h
