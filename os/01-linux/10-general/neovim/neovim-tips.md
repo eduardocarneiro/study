@@ -1,5 +1,4 @@
 
-<<<<<<< HEAD
 
 
 ```
@@ -96,27 +95,4 @@ root@eoc:~# sbopkg -i ripgrep
 ```
 
 
-
-reltio
-40/h
-
----
-harpoon.lua
-
-![[Pasted image 20260624231422.png]] 
-
-<leader>  ff --> find a file e.g harpoon.lua 
-<leader>  a --> to add it to harpoon list
-<leader>  ff --> find a file e.g telescope.lua
-<leader>  a --> to add it to harpoon list
-ctrl e --> to show harpoon list
-
-
-
-
-
-
-=======
-need to add later
->>>>>>> fa6a35a (fixed and added new tmux and neovim things)
 

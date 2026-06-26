@@ -51,7 +51,7 @@ eduardo@eoc:~/JetBrainsMonoNerd$ wget https://github.com/ryanoasis/nerd-fonts/re
 
 eduardo@eoc:~/JetBrainsMonoNerd$ unzip JetBrainsMono.zip 
 
-eduardo@eoc:~/JetBrainsMonoNerd$ su -c "mkdir -p /usr/share/fonts/TTF/JetBrainsMonoNerd
+eduardo@eoc:~/JetBrainsMonoNerd$ su -c "mkdir -p /usr/share/fonts/TTF/JetBrainsMonoNerd"
 
 eduardo@eoc:~/JetBrainsMonoNerd$ su -c "cp *.ttf /usr/share/fonts/TTF/JetBrainsMonoNerd/"
 

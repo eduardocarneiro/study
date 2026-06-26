@@ -172,7 +172,7 @@ eduardo@eoc:~/obsidian-notes$ cd study/
 
 4. set a new remote git repository to `study` directory cloned before
 ```bash 
-eduardo@eoc:~/obsidian-notes/study$ git remote set-url github https://github.com/eduardocarneiro/study.git
+eduardo@eoc:~/obsidian-notes/study$ git remote add github https://github.com/eduardocarneiro/study.git
 ```
 
 5.  create the `.gitignore`
