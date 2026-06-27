@@ -75,12 +75,6 @@ To source the file you are editing
 
 esc + :so
 
-📚 References
-
-The following external resources are excellent companions for expanding configuration capabilities and looking up advanced CLI commands:
-
-- [[1] Neovim Manual in Video by TJ](https://www.youtube.com/watch?v=rT-fbLFOCy0)
-- [[2] How to Install and Configure Neovim (2026 Edition) | Full IDE Guide](https://www.youtube.com/watch?v=46z_h4bNzjk)
    
 ---
 Install Ripgrep
