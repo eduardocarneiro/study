@@ -5,6 +5,7 @@ cloud/aws/02-aws-exams/01-saa-c03/*/
 #cloud/aws/02-aws-exams
 #cloud/azure/02-azure-exams
 #cloud/google/02-google-exams
+cloud/projects/project-aws-enterprise-landing-zone-iac
 cloud/projects/project-aws-01-aaa
 cloud/projects/project-aws-02-bbb
 cloud/projects/project-azure-01-aaa
