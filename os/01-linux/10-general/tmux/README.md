@@ -20,7 +20,7 @@ To have a nice **Tmux** like the picture below,  I created three files.
 * .tmux-window-icon.sh
 
 
-![](_attachments/Pasted%20image%2020260617002143.png)
+![](Pasted_image_20260617002143.png)
 
 Click [here](./tmux-configuration.md) to check out all details
 
