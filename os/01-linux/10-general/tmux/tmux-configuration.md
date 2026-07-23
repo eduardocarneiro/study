@@ -160,4 +160,4 @@ esac
 
 > NOTE: You can safety copy the content of the files above . After install NerdFont, your code will look like the picture below:
 
-![](Pasted_image_20260621175207.png)
+![](_attachments/Pasted_image_20260621175207.png)
