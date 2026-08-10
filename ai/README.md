@@ -54,6 +54,7 @@ Design, deploy, and master self-hosted local AI infrastructure and seamlessly in
 [Voice Chatbot / The Coding Train](https://thecodingtrain.com/tracks/transformers-js/188-voice-chatbot)
 [Is AI Profitable Yet?](https://isaiprofitable.com/)
 [GitHub - pewdiepie-archdaemon/odysseus: Self-hosted AI workspace. · GitHub](https://github.com/pewdiepie-archdaemon/odysseus)
+[The AI Agents Playbook](https://docs.google.com/spreadsheets/d/1Ltfo9s9d0_uD9ETJC3oYuNUI4zxssCLATewZ1XU_uqM/edit?gid=1217695116#gid=1217695116)
 
 
 
