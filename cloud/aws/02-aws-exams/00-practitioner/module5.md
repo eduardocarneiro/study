@@ -53,8 +53,9 @@ Consider the same example of sending a request out from an Amazon EC2 instance t
 | **Uses**           | Fine-grained control of traffic for individual EC2 instances          | Broad control of traffic in and out of subnets               |
 
 
-**Amzazon VPC Demo**
+**Amazon VPC Demo**
 
+![](Pasted%20image%2020260901172411.png)
 
 **global architectures**
 
