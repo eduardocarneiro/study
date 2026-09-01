@@ -59,6 +59,14 @@ Consider the same example of sending a request out from an Amazon EC2 instance t
 
 **global architectures**
 
+![](Pasted%20image%2020260901172457.png)
+
+![](Pasted%20image%2020260901172611.png)
+
+![](Pasted%20image%2020260901174139.png)
+
+![](Pasted%20image%2020260901174743.png)
+
 
 
 **module summary**
