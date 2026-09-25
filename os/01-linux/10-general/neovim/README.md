@@ -1,9 +1,8 @@
 
 # 💻 Neovim (Advanced IDE for AI SRE Automation)
 
-Welcome to the **Neovim** engineering workspace. This module forms the primary editing core and context engine for our unified **AI SRE Setup** (`Tmux + Neovim + Local LLM + MCP + Agents`). 
+Welcome to the **Neovim** engineering workspace. This module is part of my full setup to achieve an **AI SRE Setup** (`Tmux + Neovim + Local LLM + MCP + Agents`). 
 
-By leveraging a fully modular architecture powered by `lazy.nvim`, this editor delivers immediate local compilation, deep syntax tracing, and sub-millisecond latencies when communicating with context engines running on localhost.
 
 ---
 
