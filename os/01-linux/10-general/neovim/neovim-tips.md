@@ -14,6 +14,9 @@ esc % to create a new file form nvim explorer
 
 esc :e init.lua --> to open a init.lua file
 
+esc shift v y p --> will copy the current line and paste in the line below
+esc shift v y p c i "--> will copy the current line and paste in the line below and clean the content inside a double quotes and enter insert mode
+
 esc shift v G --> to select all line below from the cursor line
 
 esc d --> to delete all
@@ -39,6 +42,14 @@ In any place type "space" + cd .It will open the screen below:
 ![[Pasted image 20260622200437.png]]
 
 ---
+how to copy a line and remove the content inside a double quote
+![](Pasted%20image%2020260925152148.png)
+
+esc shift v y p c i " --> It will select the current line copy and paste it in the next line and clean the content inside a double quotes
+![](Pasted%20image%2020260925152434.png)
+
+
+----
 
 how to copy a line and edit from a specific place
 ![[Pasted image 20260622192039.png]]

@@ -7,11 +7,13 @@ Welcome to the **Neovim** engineering workspace. This module is part of my full 
 ---
 
 
-## 🏗️ Architectural Topology & File Ecosystem
+##  Architectural Topology & File Ecosystem
 
 The configuration is completely modularized, ensuring strict separation of concerns between core editor parameters, customized keymappings, and third-party development engines.
 
-```text
+Click [here](nvim-configuration.md) to check out all configuration files detail
+
+```txt
 .config/nvim/
 ├── init.lua                  # Primary environment bootstrap entrypoint
 ├── lazy-lock.json            # Lockfile detailing deterministic plugin hashes
@@ -29,6 +31,7 @@ The configuration is completely modularized, ensuring strict separation of conce
         └── new-plugin.lua    # New plugin to add more features
 ```
 
+
 ### **Is the file organization a good practice?**
 
 **Yes, it is excellent and adheres perfectly to the modern `lazy.nvim` paradigm.**
@@ -38,36 +41,13 @@ The configuration is completely modularized, ensuring strict separation of conce
 - **Autoloading Directory:** In `lazy.lua`, the configuration sets up `{ import = "plugins" }`. This allows `lazy.nvim` to scan the `lua/plugins/` directory automatically. Any file returning a Lua table will be evaluated as a plugin specification without needing manual tracking or `require` calls inside your initialization core.
 
 
+
 ## ⌨️ Critical SRE Shortcut Reference
 
 This deployment focuses exclusively on keyboard efficiency, keeping context switching overhead to an absolute minimum.
 
-### 🔍 System Navigation & Workspace Scanning
+Click [here](nvim-shortcut-references.md) to check out all nvim shortcut 
 
-|**Shortcut**|**Action**|**Core Component**|
-|---|---|---|
-|`<Space> cd`|Instantly drop to built-in file explorer (`:Ex`)|Neovim Core|
-|`<Space> ff`|Fuzzy search file paths across workspace files|Telescope|
-|`<Space> fg`|Live regex grep search across all file rows|Telescope|
-|`<Space> fb`|Open interactive visualization of active buffers|Telescope|
-
-### 🎯 Context-Pinning Navigation
-
-|**Shortcut**|**Action**|**Core Component**|
-|---|---|---|
-|`<Space> a`|Pin current file to the registry slot|Harpoon 2|
-|`Ctrl + e`|Toggle floating file registry modification menu|Harpoon 2|
-|`Alt + 1..4`|Instant hop to pinned file slot 1 through 4|Harpoon 2|
-
-### 🛠️ Language Engineering & Refactoring (LSP Active)
-
-|**Shortcut**|**Action**|**Core Component**|
-|---|---|---|
-|`g d`|Leap to codebase definition point|Neovim LSP Client|
-|`K`|Call floating documentation dock and arguments specs|Neovim LSP Client|
-|`g r`|Live trace all occurrences across workspace scopes|Neovim LSP Client|
-|`<Space> rn`|Global variable refactoring renaming safety sweep|Neovim LSP Client|
-|`<Space> ca`|Prompts contextual code quick-fixes|Neovim LSP Client|
 
 
 ## 🚀 How to add more plugins using lazy.nvim properly
@@ -105,6 +85,7 @@ return {
 ```
 
 Upon launching your next terminal session, `lazy.nvim` will register the delta file, download system binaries asynchronously in background environments, and inject the logic seamlessly.
+
 
 
 ## 📚 References
