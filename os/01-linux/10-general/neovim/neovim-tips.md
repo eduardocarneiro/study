@@ -95,7 +95,11 @@ esc :e
 ---
 **How to return to netrw from a file**
 esc :e.
-   
+
+---
+**VIM's netrw commands**
+https://gist.github.com/danidiaz/37a69305e2ed3319bfff9631175c5d0f
+
 ---
 Install Ripgrep
 
