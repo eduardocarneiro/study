@@ -86,6 +86,15 @@ To source the file you are editing
 
 esc + :so
 
+
+---
+**Reload the current file**
+
+esc :e
+
+---
+**How to return to netrw from a file**
+esc :e.
    
 ---
 Install Ripgrep
