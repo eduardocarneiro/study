@@ -101,6 +101,7 @@ The following external resources are excellent companions for expanding configur
 - [[7] Mason Registry Infrastructure Index](https://github.com/williamboman/mason.nvim)
 - [[8] Tree-sitter Code Parser Core Language Index](https://tree-sitter.github.io/tree-sitter/)
 - [[9] ThePrimeagen Harpoon 2 Architectural Design](https://github.com/ThePrimeagen/harpoon/tree/harpoon2)
-
+-  [[10] Vim's netrw commands](https://gist.github.com/danidiaz/37a69305e2ed3319bfff9631175c5d0f)
+-  [[11] vimschool](https://vimschool.netlify.app/introduction/)
 
 

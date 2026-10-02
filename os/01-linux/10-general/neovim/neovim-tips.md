@@ -113,4 +113,39 @@ root@eoc:~# sbopkg -i ripgrep
 ```
 
 
+---
 
+
+1. https://www.reddit.com/r/neovim/comments/1306vb2/which_file_explorer_do_you_use/
+
+2.  search on google
+![[Pasted image 20261002122608.png]]
+
+```
+As Opções mais populares de gerenciadores e exploradores de arquivos para o **Neovim** dividem-se entre ==soluções nativas, plugins tradicionais em formato de árvore (_sidebar_) e abordagens modernas em formato de buffer ou terminal==:
+
+1. Opções Nativas (Sem Plugins)
+
+- **Netrw** (Padrão): É o explorador de arquivos clássico que já vem integrado ao Neovim/Vim. Pode ser usado como lista de diretórios ou em formato de árvore, além de suportar conexões remotas via rede. É leve, mas pode ficar lento em projetos muito grandes e aninhados. [[1](https://www.youtube.com/watch?v=xy9sSVx2cfk&t=9), [2](https://pawelgrzybek.com/neovim-file-explorers/)]
+
+- **Visualizador Nativo de Diretórios** (Novidade): Versões mais recentes do Neovim (como o suporte experimental/novo a partir da v0.13) trazem um visualizador de diretórios integrado, leve e com suporte a atalhos rápidos e decoradores de ícones. [[1](https://www.reddit.com/r/neovim/comments/1vz7x0v/neovim_013_is_getting_a_new_builtin_directory/)]
+
+2. Plugins em Formato de Árvore (_Sidebar Tree_)
+
+- **Nvim-Tree (`nvim-tree.lua`)**: Um dos plugins mais populares da comunidade. Ele simula uma barra lateral gráfica estilo IDE tradicional (como VS Code), com suporte a ícones do _Nerd Fonts_, atalhos customizáveis e navegação rápida por divisões de janela (`Ctrl + v`, `Ctrl + n`). [[1](https://www.reddit.com/r/neovim/comments/1306vb2/which_file_explorer_do_you_use/), [2](https://docs.rockylinux.org/10/books/nvchad/nvchad_ui/nvimtree/), [3](https://docs.bettervim.com/mappings/file-explorer)]
+
+- **Neo-Tree (`neo-tree.nvim`)**: Outro grande favorito dos usuários de Neovim, muito rico em funcionalidades. Ele suporta não apenas a árvore de arquivos do projeto, mas também gerencia buffers abertos, git status e arquivos modificados diretamente na barra lateral. [[1](https://www.reddit.com/r/neovim/comments/1w685wc/best_file_tree_explorer_for_neovim/), [2](https://www.reddit.com/r/neovim/comments/1306vb2/which_file_explorer_do_you_use/)]
+
+3. Abordagem Baseada em Buffer (Edição Direta)
+
+- **Oil.nvim** (`stevearc/oil.nvim`): Permite que você **edite o sistema de arquivos como se fosse um arquivo de texto comum (buffer)**. Você abre uma pasta com `:Oil`, renomeia, apaga ou move linhas diretamente no buffer e basta dar `:w` para aplicar as mudanças reais no disco. É muito elogiado pela simplicidade e velocidade. [[1](https://github.com/stevearc/oil.nvim), [2](https://yeripratama.com/blog/better-file-explorer-workflow-in-neovim/)]
+
+4. Gerenciadores de Arquivos Externos via Terminal
+
+- **Yazi (`yazi`)**: Um gerenciador de arquivos de terminal ultrarrápido baseado em Rust (com pré-visualização de imagens/arquivos e integração com _Zoxide_), que muitos usuários configuram para abrir em uma aba/flutuante dentro do Neovim ou via tmux. [[1](https://www.reddit.com/r/neovim/comments/1w685wc/best_file_tree_explorer_for_neovim/), [2](https://daily.dev/posts/how-i-navigate-files-in-neovim-hkyv9o06n)]
+
+- **Vifm**: Um gerenciador de arquivos em modo texto inspirado no _vifm/ranger_ (com navegação em dois painéis) que pode ser usado tanto de forma independente quanto integrado ao fluxo do Neovim. [[1](https://www.reddit.com/r/neovim/comments/1306vb2/which_file_explorer_do_you_use/)]
+```
+
+
+---

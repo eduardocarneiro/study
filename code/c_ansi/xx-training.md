@@ -1,4 +1,7 @@
 
+**Linguagem C: O Curso Definitivo (Aprenda do Zero em 10 Horas)**
+https://www.youtube.com/watch?v=EIGAc5mdPpE&t=341s
+https://github.com/fromcaio/c-course
 
 C PADRÃO KERNIGHAN & RITCHIE é a LINGUAGEM do FUTURO, ESQUEÇA OUTRAS LINGUAGENS
 https://www.youtube.com/watch?v=cbloz65iVVM
