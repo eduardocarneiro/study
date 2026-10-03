@@ -191,6 +191,7 @@ return {
 
 * Provides high-speed AST syntax highlighting and indent support
 
+1. Create `~/.config/nvim/lua/plugins/treesitter.lua`
 ```lua
 return {
     'nvim-treesitter/nvim-treesitter',               
@@ -243,3 +244,48 @@ return {
 
 * Open a Lua file and run `:InspectTree`
 * An AST syntax tree split window should appear on the left side of your editor
+
+
+
+## Stage 8: Context Pinning (`lua/plugins/harpoon.lua`)
+
+* Allows instant file hopping without needing file trees or buffer hunting
+
+1. Create `~/.config/nvim/lua/plugins/harpoon.lua`
+```lua
+return {
+  "ThePrimeagen/harpoon",
+  branch = "harpoon2",
+  dependencies = { "nvim-lua/plenary.nvim" },
+  config = function()
+    local harpoon = require("harpoon")
+    
+    -- Required setup initialization
+    harpoon:setup()
+
+    -- ── KEYMAPS ──────────────────────────────────────────────────
+    
+    -- Mark/Append current file to the list
+    vim.keymap.set("n", "<leader>a", function()
+      harpoon:list():add()
+    end, { desc = "Harpoon: Mark/Add File" })
+
+    -- Toggle the floating interactive menu list
+    vim.keymap.set("n", "<C-e>", function()
+      harpoon.ui:toggle_quick_menu(harpoon:list())
+    end, { desc = "Harpoon: Toggle Menu" })
+
+    -- Instant switching to slots 1 through 4 via Alt + Number
+    vim.keymap.set("n", "<M-1>", function() harpoon:list():select(1) end, { desc = "Harpoon: File 1" })
+    vim.keymap.set("n", "<M-2>", function() harpoon:list():select(2) end, { desc = "Harpoon: File 2" })
+    vim.keymap.set("n", "<M-3>", function() harpoon:list():select(3) end, { desc = "Harpoon: File 3" })
+    vim.keymap.set("n", "<M-4>", function() harpoon:list():select(4) end, { desc = "Harpoon: File 4" })
+  end,
+}
+```
+
+**🧪 How to Test:**
+
+* Open a file and press `<Space>a` to mark it
+* Press `Ctrl + e` to open the Harpoon marked file list menu
+* Repeat both steps in another file
