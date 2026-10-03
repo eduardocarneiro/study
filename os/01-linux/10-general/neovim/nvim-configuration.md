@@ -180,3 +180,66 @@ return {
     }
 ```
 
+**🧪 How to Test:**
+
+* Press `<Space>ff` to open file search.
+* Press `<Space>fg` and type a keyword to search text across all project files
+
+
+
+## Stage 7: AST Syntax Parsing (`lua/plugins/treesitter.lua`)
+
+* Provides high-speed AST syntax highlighting and indent support
+
+```lua
+return {
+    'nvim-treesitter/nvim-treesitter',               
+    build = ':TSUpdate',
+    config = function()
+        local configs = require("nvim-treesitter.configs")                                                
+        configs.setup({
+            highlight = {
+                enable = true,                       
+            },
+            indent = { enable = true },              
+            autotage = { enable = true},             
+            -- list of supported languages https://github.com/nvim-treesitter/nvim-treesitter/blob/main/SUPPORTED_LANGUAGES.md      
+            ensure_installed = {                     
+                "lua",
+                "javascript",                        
+                "yaml",
+                "bash",
+                "c",
+                "cpp",
+                "terraform",                         
+                "rust",
+                "python",
+                "go",
+                "json",
+                "sql",
+                "solidity",                          
+                "tmux",
+                "vim",
+                "ruby",
+                "php",
+                "mermaid",                           
+                "jinja",
+                "java",
+                "awk",
+                "css",
+                "dockerfile",                        
+                "groovy",
+                "helm",
+                "html",
+                "typescript",                        
+            },
+            auto_install = false,                    
+        })
+    end
+}
+```
+
+**🧪 How to Test:**
+
+* Open a Lua file and run `:InspectTree`
+* An AST syntax tree split window should appear on the left side of your editor
