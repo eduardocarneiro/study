@@ -289,3 +289,142 @@ return {
 * Open a file and press `<Space>a` to mark it
 * Press `Ctrl + e` to open the Harpoon marked file list menu
 * Repeat both steps in another file
+
+
+
+## Stage 9: LSP & Autocompletion Engine (`lua/plugins/lsp.lua`)
+
+* Integrates Mason, Mason-LSPConfig, nvim-lspconfig, and nvim-cmp
+
+1. Create `~/.config/nvim/lua/plugins/lsp.lua`
+```lua
+return {
+  -- 1. External Tools Manager (Mason)
+  {
+    "williamboman/mason.nvim",
+    cmd = "Mason",
+    build = ":MasonUpdate",
+    opts = {
+      ui = {
+        border = "rounded",
+        icons = {
+          package_installed = "✓",
+          package_pending = "➜",
+          package_uninstalled = "✗"
+        }
+      }
+    }
+  },
+
+  -- 2. Autocomplete Engine Ecosystem
+  {
+    "hrsh7th/nvim-cmp",
+    event = "InsertEnter",
+    dependencies = {
+      "hrsh7th/cmp-nvim-lsp", -- Engine bridge for language clients
+      "hrsh7th/cmp-buffer",   -- Suggestions from active buffer texts
+      "hrsh7th/cmp-path",     -- Auto-completes OS directory paths
+    },
+    config = function()
+      local cmp = require("cmp")
+      cmp.setup({
+        mapping = cmp.mapping.preset.insert({
+          ["<C-b>"] = cmp.mapping.scroll_docs(-4),
+          ["<C-f>"] = cmp.mapping.scroll_docs(4),
+          ["<C-Space>"] = cmp.mapping.complete(),
+          ["<CR>"] = cmp.mapping.confirm({ select = true }),
+          ["<Tab>"] = cmp.mapping(function(fallback)
+            if cmp.visible() then cmp.select_next_item() else fallback() end
+          end, { "i", "s" }),
+        }),
+        sources = cmp.config.sources({
+          { name = "nvim_lsp" },
+          { name = "buffer" },
+          { name = "path" },
+        }),
+        window = {
+          completion = cmp.config.window.bordered(),
+          documentation = cmp.config.window.bordered(),
+        },
+      })
+    end
+  },
+
+  -- 3. The LSP Core Configurator (Connects Mason and nvim-lspconfig)
+  {
+    "neovim/nvim-lspconfig",
+    event = { "BufReadPre", "BufNewFile" },
+    dependencies = {
+      "williamboman/mason-lspconfig.nvim",
+      "ray-x/lsp_signature.nvim", -- Inline parameter helpers
+    },
+    config = function()
+      -- Automatically hook engine auto-completions into every language server
+      local capabilities = vim.lsp.protocol.make_client_capabilities()
+      local status_cmp, cmp_nvim_lsp = pcall(require, "cmp_nvim_lsp")
+      if status_cmp then
+        capabilities = cmp_nvim_lsp.default_capabilities(capabilities)
+      end
+
+      -- Interactive Global Keymaps inside connected code buffers
+      vim.api.nvim_create_autocmd("LspAttach", {
+        group = vim.api.nvim_create_augroup("UserLspConfig", {}),
+        callback = function(ev)
+          local opts = { buffer = ev.buf }
+          
+          -- Keybindings definitions
+          vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)       -- Go to Definition
+          vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)             -- Documentation Dock
+          vim.keymap.set("n", "gr", vim.lsp.buf.references, opts)        -- Code Usage references
+          vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)   -- Smart refactor rename
+          vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts) -- Context fixes
+          
+          -- Enable Native Inlay Hints if supported by the server binary
+          if vim.lsp.inlay_hint then
+            vim.lsp.inlay_hint.enable(true, { bufnr = ev.buf })
+          end
+
+          -- Boot up floating signature parameters context helper
+          require("lsp_signature").on_attach({
+            bind = true,
+            handler_opts = { border = "rounded" }
+          }, ev.buf)
+        end,
+      })
+
+      -- Define your target SRE/Dev Environment language matrix
+      local servers = {
+        lua_ls = {},         -- Neovim plugins & scripts
+        pyright = {},        -- Python Automation & AI Libraries
+        gopls = {},          -- Go microservices & custom SRE operators
+        yamlls = {},         -- Kubernetes & Ansible
+        bashls = {},         -- Automation scripts
+        tflint = {},         -- Terraform / OpenTofu Infrastructure
+        dockerls = {},       -- Container engine layers
+        jsonls = {},         -- Configurations files
+        rust_analyzer = {},  -- Systems programming
+      }
+
+      -- Initialize Mason Bridge targeting automatic dynamic deployments
+      require("mason-lspconfig").setup({
+        ensure_installed = vim.tbl_keys(servers),
+        handlers = {
+          function(server_name)
+            require("lspconfig")[server_name].setup({
+              capabilities = capabilities,
+              settings = servers[server_name],
+            })
+          end,
+        },
+      })
+    end
+  }
+}
+
+```
+
+**🧪 How to Test:**
+
+* Run `:Mason` to verify background binary installation
+* Open a Lua file, hover over a standard API function (e.g., `vim.keymap.set`), and hit `K` to view documentation
+
