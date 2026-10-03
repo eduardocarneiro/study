@@ -1,6 +1,9 @@
 
 
-### 🔍 Neovim Netrw file explorer
+### 🔍 VIM / Neovim Core
+
+
+### 🔍 Neovim - Netrw file explorer
 
 | Shortcut | Action                                                      | Core Component          |
 | -------- | ----------------------------------------------------------- | ----------------------- |

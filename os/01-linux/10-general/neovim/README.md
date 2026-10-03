@@ -49,6 +49,11 @@ This deployment focuses exclusively on keyboard efficiency, keeping context swit
 Click [here](nvim-shortcut-references.md) to check out all nvim shortcut 
 
 
+## Guide VIMtutor
+
+A good start with VIM and Neovim is using `vimtutor`
+
+Click [here](vimtutor.md) to check out all `vimtutor` 
 
 ## 🚀 How to add more plugins using lazy.nvim properly
 
