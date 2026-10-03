@@ -149,3 +149,12 @@ As Opções mais populares de gerenciadores e exploradores de arquivos para o **
 
 
 ---
+vim / nvim close quotes and brackets
+# [Vim: Add closing buckles, brackets, quotation marks etc. automatically? [duplicate]](https://stackoverflow.com/questions/37654577/vim-add-closing-buckles-brackets-quotation-marks-etc-automatically)
+--> [https://github.com/jiangmiao/auto-pairs](https://github.com/jiangmiao/auto-pairs)
+
+# [Append inside brackets, quotes, double quotes](https://vi.stackexchange.com/questions/36217/append-inside-brackets-quotes-double-quotes)
+--> ```
+nnoremap
+
+---
