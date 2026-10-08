@@ -17,7 +17,7 @@ Explore the architectural layers of Artificial Intelligence, local language mode
 ## 📂 Structure
 
 <pre>
-artificial_intelligence --- (Layer 1: Macro Science)
+artificial_intelligence/ --- (Layer 1: Macro Science)
 ├── README.md
 ├── README_old.md
 ├── artificial_intelligence.md
@@ -27,18 +27,31 @@ artificial_intelligence --- (Layer 1: Macro Science)
 │           ├── llm_pt-br.md
 │           ├── local-infrastructure-and-ecosystem --- (Layer 5: Runtimes, Middleware & Systems)
 │           │   ├── agentic-ai-and-frameworks --- (The Paradigm & Design Patterns)
+│           │   │   ├── agentic-design-patterns --- (Tool Calling, Reflection, Multi-Agent Loops)
+│           │   │   ├── ai_agents --- (Individual Autonomous Task Workers)
+│           │   │   │   ├── always-on-background-agents --- "Dots" (Persistent 24/7 autonomous daemons with sandbox/memory)
+│           │   │   │   └── ephemeral_agents --- (Short-lived chat/coding task agents: Cursor, Claude Code)
+│           │   │   └── orchestration-frameworks --- (LangGraph, CrewAI, AutoGen, LlamaIndex Workflows)
 │           │   ├── connectors-and-protocols
+│           │   │   └── mcp --- (Model Context Protocol - Standardized Tool/Data Connectors)
 │           │   ├── execution-and-automation-interfaces
+│           │   │   ├── developer-editors --- (Neovim AI Plugins, VS Code Continue.dev)
+│           │   │   └── workflow-automation --- (n8n - Logic backbone & API triggers)
 │           │   ├── retrieval-and-context-stack
+│           │   │   ├── embeddings --- (Voyage AI, BGE, Sentence Transformers)
+│           │   │   ├── rag --- (Retrieval-Augmented Generation)
+│           │   │   └── vector-databases --- (Pinecone, Chroma, Qdrant, Milvus, pgvector)
 │           │   ├── runtime-and-execution --- (Ollama, vLLM, Llama.cpp)
 │           │   └── system-ops-and-services
-│           ├── open-weights-models.md
-│           └── proprietary-models.md
+│           │       ├── ai-security-and-guardrails --- (NVIDIA NeMo Guardrails, Presidio)
+│           │       ├── memory --- (Mem0, Zep, Persistent Context DBs)
+│           │       └── observability-and-tracing --- (LangSmith, Langfuse, Arize)
+│           ├── open-weights-models.md --- (Local Files: Meta Llama, Mistral, Qwen, DeepSeek)
+│           └── proprietary-models.md --- (Cloud: OpenAI GPT, Claude, Gemini)
 └── projects
-
 </pre>
 
-## 📂 Projects
+## 🚀 Projects
 - Multi-Threaded Local LLM VM Hosting (VMware ESXi Optimization)
 - AI Platform on Kubernetes - (LLM Deploy local on Kubernetes)
 - Kubernetes RCA Agent - (Automatic Root cause analysis)
