@@ -17,37 +17,37 @@ Explore the architectural layers of Artificial Intelligence, local language mode
 ## 📂 Structure
 
 <pre>
-artificial_intelligence/ --- (Layer 1: Macro Science)
+artificial_intelligence/
 ├── README.md
 ├── README_old.md
 ├── artificial_intelligence.md
-├── machine_learning --- (Layer 2: Learning from Data)
-│   └── deep_learning --- (Layer 3: Neural Networks)
-│       └── generative-ai-and-llms --- (Layer 4: Models & Parameters / Brains)
+├── machine_learning 
+│   └── deep_learning 
+│       └── generative-ai-and-llms 
 │           ├── llm_pt-br.md
-│           ├── local-infrastructure-and-ecosystem --- (Layer 5: Runtimes, Middleware & Systems)
-│           │   ├── agentic-ai-and-frameworks --- (The Paradigm & Design Patterns)
-│           │   │   ├── agentic-design-patterns --- (Tool Calling, Reflection, Multi-Agent Loops)
-│           │   │   ├── ai_agents --- (Individual Autonomous Task Workers)
-│           │   │   │   ├── always-on-background-agents --- "Dots" (Persistent 24/7 autonomous daemons with sandbox/memory)
-│           │   │   │   └── ephemeral_agents --- (Short-lived chat/coding task agents: Cursor, Claude Code)
-│           │   │   └── orchestration-frameworks --- (LangGraph, CrewAI, AutoGen, LlamaIndex Workflows)
+│           ├── local-infrastructure-and-ecosystem 
+│           │   ├── agentic-ai-and-frameworks 
+│           │   │   ├── agentic-design-patterns 
+│           │   │   ├── ai_agents 
+│           │   │   │   ├── always-on-background-agents 
+│           │   │   │   └── ephemeral_agents 
+│           │   │   └── orchestration-frameworks 
 │           │   ├── connectors-and-protocols
-│           │   │   └── mcp --- (Model Context Protocol - Standardized Tool/Data Connectors)
+│           │   │   └── mcp
 │           │   ├── execution-and-automation-interfaces
-│           │   │   ├── developer-editors --- (Neovim AI Plugins, VS Code Continue.dev)
-│           │   │   └── workflow-automation --- (n8n - Logic backbone & API triggers)
+│           │   │   ├── developer-editors 
+│           │   │   └── workflow-automation 
 │           │   ├── retrieval-and-context-stack
-│           │   │   ├── embeddings --- (Voyage AI, BGE, Sentence Transformers)
-│           │   │   ├── rag --- (Retrieval-Augmented Generation)
-│           │   │   └── vector-databases --- (Pinecone, Chroma, Qdrant, Milvus, pgvector)
-│           │   ├── runtime-and-execution --- (Ollama, vLLM, Llama.cpp)
+│           │   │   ├── embeddings 
+│           │   │   ├── rag 
+│           │   │   └── vector-databases 
+│           │   ├── runtime-and-execution 
 │           │   └── system-ops-and-services
-│           │       ├── ai-security-and-guardrails --- (NVIDIA NeMo Guardrails, Presidio)
-│           │       ├── memory --- (Mem0, Zep, Persistent Context DBs)
-│           │       └── observability-and-tracing --- (LangSmith, Langfuse, Arize)
-│           ├── open-weights-models.md --- (Local Files: Meta Llama, Mistral, Qwen, DeepSeek)
-│           └── proprietary-models.md --- (Cloud: OpenAI GPT, Claude, Gemini)
+│           │       ├── ai-security-and-guardrails 
+│           │       ├── memory 
+│           │       └── observability-and-tracing 
+│           ├── open-weights-models.md 
+│           └── proprietary-models.md
 └── projects
 </pre>
 
@@ -65,10 +65,10 @@ Design, deploy, and master self-hosted local AI infrastructure and seamlessly in
 
 ## Links
 
-[Hugging Face](https://huggingface.co/)
-[Voice Chatbot / The Coding Train](https://thecodingtrain.com/tracks/transformers-js/188-voice-chatbot)
-[Is AI Profitable Yet?](https://isaiprofitable.com/)
-[GitHub - pewdiepie-archdaemon/odysseus: Self-hosted AI workspace. · GitHub](https://github.com/pewdiepie-archdaemon/odysseus)
-[The AI Agents Playbook](https://docs.google.com/spreadsheets/d/1Ltfo9s9d0_uD9ETJC3oYuNUI4zxssCLATewZ1XU_uqM/edit?gid=1217695116#gid=1217695116)
+* [Hugging Face](https://huggingface.co/)
+* [Voice Chatbot / The Coding Train](https://thecodingtrain.com/tracks/transformers-js/188-voice-chatbot)
+* [Is AI Profitable Yet?](https://isaiprofitable.com/)
+* [GitHub - pewdiepie-archdaemon/odysseus: Self-hosted AI workspace. · GitHub](https://github.com/pewdiepie-archdaemon/odysseus)
+* [The AI Agents Playbook](https://docs.google.com/spreadsheets/d/1Ltfo9s9d0_uD9ETJC3oYuNUI4zxssCLATewZ1XU_uqM/edit?gid=1217695116#gid=1217695116)
 
 
