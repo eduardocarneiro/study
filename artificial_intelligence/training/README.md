@@ -1,4 +1,45 @@
 
+29.10.2026
+
+Formação Engenheiro de IA Generativa 2026: IA na Prática
+https://www.udemy.com/course/formacao-engenheiro-de-ia-generativa-ia-na-pratica/
+
+Formação Completa em Inteligência Artificial 2026
+https://www.udemy.com/course/inteligencia-artificial-e-machine-learning/
+
+Criação de Agentes de IA Completo Do Zero ao Avançado
+https://www.udemy.com/course/engenharia-de-agentes-de-ia/
+
+LLMs e Agentes de IA para Empresas e Negócios
+https://www.udemy.com/course/llms-e-agentes-de-ia-para-empresas-e-negocios/
+
+AI & Python Development Megaclass - 300+ Hands-on Projects
+https://www.udemy.com/course/ai-python-development-megaclass-300-hands-on-projects/
+
+AI Engineer Core Track: LLM Engineering, RAG, QLoRA, Agents
+https://www.udemy.com/course/llm-engineering-master-ai-and-large-language-models/
+
+The AI Engineer Course 2026: Complete AI Engineer Bootcamp
+https://www.udemy.com/course/the-ai-engineer-course-complete-ai-engineer-bootcamp/
+
+AI Engineer Agentic Track: The Complete Agent & MCP Course
+https://www.udemy.com/course/the-complete-agentic-ai-engineering-course/
+
+AI Engineer Core Track: LLM Engineering, RAG, QLoRA, Agents
+https://www.udemy.com/course/llm-engineering-master-ai-and-large-language-models/
+
+AI Builder: Create Agents, Voice Agents & Automations in n8n
+https://www.udemy.com/course/ai-builder-with-n8n-create-agents-voice-agents/
+
+Full stack generative and Agentic AI with python
+https://www.udemy.com/course/full-stack-ai-with-python/
+
+FastAPI with GenAI and AgenticAI project - From Basic to AI
+https://www.udemy.com/course/fastapi-with-genai-and-agenticai-project/
+
+
+
+---
 
 Agentes de IA - Princípios e Fundamentos
 https://www.udemy.com/course/agentes-de-ia/

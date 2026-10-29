@@ -137,3 +137,28 @@ https://www.udemy.com/course/rastreamento-objetos-python-opencv/
 O Curso Completo de MongoDB e NoSQL com PYTHON para DEVs SQL
 https://www.udemy.com/course/mongodb-nosql/
 
+
+---
+29.10.2026
+
+
+FastAPI - APIs Modernas e Assíncronas com Python
+https://www.udemy.com/course/fastapi-apis-modernas-e-assincronas-com-python
+
+FastAPI - The Complete Course 2026 (Beginner + Advanced)
+https://www.udemy.com/course/fastapi-the-complete-course/
+
+FastAPI - Websites Modernos e Assíncronos com Python
+https://www.udemy.com/course/fastapi-websites-modernos-e-assincronos-com-python/
+
+
+
+
+
+
+
+
+
+
+
+
