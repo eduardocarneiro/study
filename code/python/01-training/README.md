@@ -34,6 +34,50 @@ https://www.udemy.com/course/create-apps-with-fastapi
 https://www.udemy.com/course/fastapi-guide/
 https://www.udemy.com/course/fast-api-masterclass
 
+## Python complete
+
+ * [Complete Python Bootcamp For Everyone From Zero to Hero 2026](https://www.udemy.com/course/python-foreveryone/)
+* [Formação Python](https://www.hugocursos.com.br/cursos-do-formacao-python)
+
+## FastAPI
+* 
+* [Curso de FastAPI 2025 - Aula de abertura. O que vamos aprender? | Aula 00](https://www.youtube.com/watch?v=ImhYlISeWPQ&list=PLOQgLBuj2-3KT9ZWvPmaGFQ0KjIez0403)
+* [FastAPI do ZERO](https://fastapidozero.dunossauro.com/estavel/)
+
+## Python and Database
+
+* [Practical SQL With Python In 3 Days: Beginner to Pro](https://www.udemy.com/course/practical-sql-with-python-in-3-days/)
+* [Create a Python Application to connect to multiple databases](https://www.udemy.com/course/create-a-python-application-to-connect-to-multiple-databases/)
+* [PostgreSQL](https://wiki.python.org/python/database/PostgreSQL.html)
+
+## Python + projects
+
+* [The Ultimate Python Bootcamp: Learn by Building 50 Projects](https://www.udemy.com/course/100-days-of-python/)
+* [Python Masterclass 2026: Build 24 Real World Python Projects](https://www.udemy.com/course/python-masterclass-course/)
+* [100 Days of Code™: The Complete Python Pro Bootcamp](https://www.udemy.com/course/100-days-of-code/)
+* [Python Mega Course: Build 20 Real-World Apps and AI Agents](https://www.udemy.com/course/the-python-mega-course/)
+* [30 Great Python Projects To Help You Master It](https://www.udemy.com/course/great-python-projects/)
+* [Learn Python by Doing with 100 Projects](https://www.udemy.com/course/learn-python-by-doing-with-100-projects/)
+* [Python Projects For Beginners: Build 4 Python Projects](https://www.udemy.com/course/projects-in-python/)
+* [Advanced Python with 10 OOP Projects](https://www.udemy.com/course/the-python-pro-course/)
+* [Python Automation: Save Hours with 4 Real Projects](https://www.udemy.com/course/python-automation-save-hours-with-4-real-projects/)
+* [100 Python Projects + Basics : The Ultimate Python Course](https://www.udemy.com/course/the-ultimate-python-course-100-projects-basics/)
+
+## Python automation
+
+* [Automate Everything with Python](https://www.udemy.com/course/automate-everything-with-python/)
+* [Hands-On Python Automation: Practical IT Tasks & Projects](https://www.udemy.com/course/python-automation-basics-streamline-it-tasks/)
+* [50 Days of Learning Advanced Programming in Python](https://www.udemy.com/course/50-days-of-learning-advanced-programming-in-python/)
+
+## Python - DevOps
+
+* [Python Scripting for DevOps: AWS, GitHub, CI/CD with Jenkins](https://www.udemy.com/course/pythondevops)
+
+## Python + Django
+
+* [Django 4 Avançado 100+ aulas domine o framework like a BOSS](https://www.udemy.com/course/django-avancado-100-aulas/)
+* 
+
 
 Python Mega Course: Build 20 Real-World Apps and AI Agents
 https://www.udemy.com/course/the-python-mega-course
