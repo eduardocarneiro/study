@@ -43,7 +43,6 @@ https://www.udemy.com/course/fastapi-with-genai-and-agenticai-project/
 * [n8n Dominando automações do zero](https://www.udemy.com/course/n8n-do-zero/)
 * [N8N - Curso Básico ao Avançado](https://www.udemy.com/course/n8n-curso-basico-ao-intermediario/)
 * [Automação Inteligente com N8N Completo para Iniciantes](https://www.udemy.com/course/aprenda-n8n-para-ini/)
-* 
 
 
 ---
