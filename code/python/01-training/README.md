@@ -112,6 +112,14 @@ https://www.udemy.com/course/python-pcep/
 * [Automação para Amazon AWS com Python 3](https://www.udemy.com/course/python-scripts-para-automacao-amazon-aws/)
 * [AWS boto3](https://www.udemy.com/courses/search/?src=ukw&q=aws%20boto3%20python)
 * [Aprenda a Criar uma API do Zero com Python e AWS Lambda!](https://www.udemy.com/course/aprenda-a-criar-uma-api-do-zero-com-python-e-aws-lambda/)
+* [Python Programming for AWS - Learn Python with AWS and Boto3](https://www.udemy.com/course/python-programming-for-aws-with-boto3/)
+* [Amazon Web Services (AWS) with Python & Boto3](https://www.udemy.com/course/amazon-web-services-aws-with-python-boto3)
+* [Master AWS with Python and Boto3](https://www.udemy.com/course/master-aws-with-python-and-boto3/)
+* [AWS - Mastering Boto3 & Lambda Functions Using Python](https://www.udemy.com/course/mastering-boto3-with-aws-services/)
+* [Build an AI Automated Ordering System with Python & AWS](https://www.udemy.com/course/python-aws-forecasting-ai-en/)
+* [Serverless using AWS Lambda for Python Developers](https://www.udemy.com/course/serverless-using-aws-lambda-for-python-developers/)
+*
+* 
 
 
 
@@ -129,10 +137,66 @@ https://www.udemy.com/course/python-pcep/
 - [ ] Selenium + Python pra Web Scraping e Automação COMPLETO
 	https://www.udemy.com/course/selenium-web-scraping-e-automacao
 
+# Ultimate AWS Certified Generative AI Developer Professional
+https://www.udemy.com/course/ultimate-aws-certified-generative-ai-developer-professional/?couponCode=UDEAFFHP2026
+
+# AI Engineer Core Track: LLM Engineering, RAG, QLoRA, Agents
+https://www.udemy.com/course/llm-engineering-master-ai-and-large-language-models/?couponCode=UDEAFFHP2026
+
+# Agentic AI Projects: FastAPI, MCP, AWS Deploy & Gemini 3
+https://www.udemy.com/course/langchain-ai-agent-projects/?couponCode=UDEAFFHP2026
+
+ [Certified Kubernetes Administrator (CKA) with Practice Tests](https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/)
+
+# Full Stack AI DevOps + Real Projects | AWS, Azure, GCP, K8S
+https://www.udemy.com/course/full-stack-devops-for-software-developers-aws-azure-gcp/
+
+# Python for DevOps: Mastering Real-World Automation
+https://www.udemy.com/course/python-devops/
+
+# Python Scripting for DevOps: AWS, GitHub, CI/CD with Jenkins
+https://www.udemy.com/course/pythondevops/
+
+# Mega Python - Pandas, Numpy, ML, APIs, GraphQL, AWS, PySpark
+https://www.udemy.com/course/mega-python/
+
+# Playwright PYTHON Automation Testing - From Zero to Expert
+https://www.udemy.com/course/playwright-python-automation-testing-pytest/
+
+# DevOps for beginners: Docker, K8s, AWS & Azure + 4 Projects
+https://www.udemy.com/course/devops-for-beginners-docker-k8s-cloud-cicd-4-projects/
+
+# Learn Playwright with Python (Web & API Automation)
+https://www.udemy.com/course/learn-playwright-with-python-web-api-automation/
+
+# Deploy FastAPI, React, PostgreSQL Apps on Amazon Cloud (AWS)
+https://www.udemy.com/course/deploy-fastapi-fullstack-amazon-cloud-aws
+
+# GCP Associate Cloud Engineer - Google Cloud Certification
+https://www.udemy.com/course/google-cloud-certification-associate-cloud-engineer/
+
+# Ollama & Local LLMs: Fine-Tune, Deploy, Build Python AI Apps
+https://www.udemy.com/course/mastering-local-llms-with-ollama-and-python-doing-projects/
+
+# Open-source LLMs: Uncensored & secure AI locally with RAG
+https://www.udemy.com/course/open-source-llms-uncensored-secure-ai-locally-with-rag/
+
+# Build local LLM applications using Python and Ollama
+https://www.udemy.com/course/build-local-llm-applications-using-python-and-ollama/
 
 
 
 
+
+---
+
+ Cloud FinOps
+ 
+- [Ultimate AWS FinOps Cloud Cost Management Masterclass!](https://www.udemy.com/course/ultimate-aws-finops-cloud-cost-management-masterclass/)
+- [FinOps for Generative AI: Cost Optimization & Budgeting](https://www.udemy.com/course/finops-for-genai/)
+- [AWS Cost Management Tools (Cost Explorer) Crash Course](https://www.udemy.com/course/aws-cost-management-tools-cost-explorer-crash-course/)
+- [Reducing AWS Costs - Learn to slash your AWS bill!](https://www.udemy.com/course/awssavings/)
+- 
 
 
 
