@@ -23,9 +23,9 @@
 
 ## FastAPI
 
+* [FastAPI - APIs Modernas e Assíncronas com Python](https://www.udemy.com/course/fastapi-apis-modernas-e-assincronas-com-python)
 * [Curso de FastAPI 2025 - Aula de abertura. O que vamos aprender? | Aula 00](https://www.youtube.com/watch?v=ImhYlISeWPQ&list=PLOQgLBuj2-3KT9ZWvPmaGFQ0KjIez0403)
 * [FastAPI do ZERO](https://fastapidozero.dunossauro.com/estavel/)
-* [FastAPI - APIs Modernas e Assíncronas com Python](https://www.udemy.com/course/fastapi-apis-modernas-e-assincronas-com-python)
 * [FastAPI - The Complete Course 2026 (Beginner + Advanced)](https://www.udemy.com/course/fastapi-the-complete-course/)
 * [FastAPI - Websites Modernos e Assíncronos com Python](https://www.udemy.com/course/fastapi-websites-modernos-e-assincronos-com-python/)
 
