@@ -37,6 +37,9 @@ https://www.udemy.com/course/full-stack-ai-with-python/
 FastAPI with GenAI and AgenticAI project - From Basic to AI
 https://www.udemy.com/course/fastapi-with-genai-and-agenticai-project/
 
+* [Full Stack AI DevOps + Real Projects | AWS, Azure, GCP, K8S](https://www.udemy.com/course/full-stack-devops-for-software-developers-aws-azure-gcp/)
+* [LLMOps And AIOps Bootcamp With 8 End To End Projects](https://www.udemy.com/course/llmops-and-aiops-bootcamp-with-9-end-to-end-projects/)
+* 
 
 ## N8N 
 

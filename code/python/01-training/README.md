@@ -76,6 +76,9 @@ https://www.udemy.com/course/fast-api-masterclass
 * [Automação de Testes com Playwright, Python e Pytest](https://www.udemy.com/course/automacao-de-testes-com-playwright-python-e-pytest/)
 * [Testes contínuos em Playwright no Github Actions](https://www.udemy.com/course/testes-continuos-em-playwright-no-github-actions)
 * [Selenium + Python pra Web Scraping e Automação COMPLETO](https://www.udemy.com/course/selenium-web-scraping-e-automacao)
+* [Python for DevOps: Mastering Real-World Automation](https://www.udemy.com/course/python-devops/)
+* 
+
 
 ## Python - DevOps
 
@@ -106,6 +109,7 @@ https://www.udemy.com/course/python-pcep/
 * [RPA com Python: Crie robôs de forma simples e prática](https://www.udemy.com/course/curso-robotic-process-automation-rpa-crie-robos-bots-com-python/)
 * [Python Completo: do código à Arquitetura, Docker e GenAI!](https://www.udemy.com/course/aprenda-python-na-pratica-utilizando-docker-nosql-kafka-ai-ia-e-mais/)
 * [Algoritmos Inteligentes de Busca com Python](https://www.udemy.com/course/algoritmos-inteligentes-de-busca-com-python/)
+* [Full Stack AI DevOps + Real Projects | AWS, Azure, GCP, K8S](https://www.udemy.com/course/full-stack-devops-for-software-developers-aws-azure-gcp/)
 
 ## Python + AWS 
 
@@ -118,9 +122,14 @@ https://www.udemy.com/course/python-pcep/
 * [AWS - Mastering Boto3 & Lambda Functions Using Python](https://www.udemy.com/course/mastering-boto3-with-aws-services/)
 * [Build an AI Automated Ordering System with Python & AWS](https://www.udemy.com/course/python-aws-forecasting-ai-en/)
 * [Serverless using AWS Lambda for Python Developers](https://www.udemy.com/course/serverless-using-aws-lambda-for-python-developers/)
-*
+* [AWS - Mastering Boto3 & Lambda Functions Using Python](https://www.udemy.com/course/mastering-boto3-with-aws-services/)
+* [Serverless using AWS Lambda for Python Developers](https://www.udemy.com/course/serverless-using-aws-lambda-for-python-developers/)
+* [AWS Lambda - A Practical Guide - Learn from an Expert](https://www.udemy.com/course/aws-lambda-a-practical-guide/)
 * 
 
+# Python + GCP
+* [Deploy de Aplicativos Python na Google Cloud Platform](https://www.udemy.com/course/deploy-de-aplicativos-python-na-google-cloud-platform/)
+* 
 
 
 --- 
@@ -185,6 +194,26 @@ https://www.udemy.com/course/open-source-llms-uncensored-secure-ai-locally-with-
 https://www.udemy.com/course/build-local-llm-applications-using-python-and-ollama/
 
 
+# Amazon Web Services (AWS) with Python & Boto3
+https://www.udemy.com/course/amazon-web-services-aws-with-python-boto3/?couponCode=UDEAFFHP2026
+
+# Master AWS with Python and Boto3
+https://www.udemy.com/course/master-aws-with-python-and-boto3/
+
+# AWS Serverless Lambda Functions 2 hr. Hands On Crash Course
+https://www.udemy.com/course/lambdaintro/
+
+# AWS Lambda, Python(Boto3) & Serverless- Beginner to Advanced
+https://www.udemy.com/course/aws-lambda-and-python-full-course-beginner-to-advanced/
+
+# Python Programming for AWS - Learn Python with AWS and Boto3
+https://www.udemy.com/course/python-programming-for-aws-with-boto3/
+
+# Amazon Web Services (AWS) with Python & Boto3
+https://www.udemy.com/course/amazon-web-services-aws-with-python-boto3/
+
+# 100+ AWS Python Boto3 Scripts
+https://www.udemy.com/course/100-aws-python-boto3-scripts/
 
 
 
