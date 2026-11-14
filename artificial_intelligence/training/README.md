@@ -119,3 +119,6 @@ https://www.udemy.com/course/carreiras-no-futuro-com-inteligencia-artificial/
 ChatGPT4 para Amazon AWS + Projetos Reais
 https://www.udemy.com/course/chatgpt-para-amazon-aws/
 
+LLMOps Masterclass 2026 - Generative AI - MLOps - AIOps
+https://www.udemy.com/course/llmops-masterclass-generative-ai-mlops-aiops/
+

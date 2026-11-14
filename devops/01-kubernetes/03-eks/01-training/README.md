@@ -13,7 +13,9 @@
 * [10 DevOps Projects: Automate, Deploy & Scale with Kubernetes](https://www.udemy.com/course/devops-deployment-projects-with-docker-kubernetes-aws/)
 * [DevSecOps Real-World Project: Build and Operate CI/CD on EKS](https://www.udemy.com/course/devops-workshop/)
 * [Full Stack AI DevOps + Real Projects | AWS, Azure, GCP, K8S](https://www.udemy.com/course/full-stack-devops-for-software-developers-aws-azure-gcp/)
-
+* [Kubernetes for Beginners: Google Cloud, AWS & Azure [2020]](https://www.udemy.com/course/kubernetes-crash-course-for-java-developers/)
+* [Full Stack AI DevOps + Real Projects | AWS, Azure, GCP, K8S](https://www.udemy.com/course/full-stack-devops-for-software-developers-aws-azure-gcp/) --- IMPORTANT
+*
 
 
 
