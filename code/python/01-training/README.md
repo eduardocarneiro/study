@@ -125,6 +125,7 @@ https://www.udemy.com/course/python-pcep/
 * [AWS - Mastering Boto3 & Lambda Functions Using Python](https://www.udemy.com/course/mastering-boto3-with-aws-services/)
 * [Serverless using AWS Lambda for Python Developers](https://www.udemy.com/course/serverless-using-aws-lambda-for-python-developers/)
 * [AWS Lambda - A Practical Guide - Learn from an Expert](https://www.udemy.com/course/aws-lambda-a-practical-guide/)
+* [Aprenda a Criar uma API do Zero com Python e AWS Lambda!](https://www.udemy.com/course/aprenda-a-criar-uma-api-do-zero-com-python-e-aws-lambda/?)
 * 
 
 # Python + GCP
@@ -132,6 +133,11 @@ https://www.udemy.com/course/python-pcep/
 * 
 
 
+# Python + OIDC 
+* [OIDC FastAPI Authlib](https://github.com/SogoKato/oidc-fastapi-authlib)
+* [OAuth 2.0 and OpenID Connect with Azure AD Login using FastAPI](https://medium.com/@sankalpmohate/oauth-2-0-and-openid-connect-with-azure-ad-login-using-fastapi-a3792b067ba6)
+* [Creating an Authentication System with FastAPI Using OpenID Connect (OIDC)](https://www.linkedin.com/pulse/creating-authentication-system-fastapi-using-openid-oidc-parasuraman-7ezgc/)
+* 
 --- 
 
 - [ ] Testes contínuos em Playwright no Github Actions
