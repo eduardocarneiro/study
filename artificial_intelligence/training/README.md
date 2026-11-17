@@ -1,4 +1,8 @@
 
+5 projects Every AI Infrastructure Engineer Should Build
+https://lnkd.in/p/dC33TPxJ
+
+
 29.10.2026
 
 Formação Engenheiro de IA Generativa 2026: IA na Prática
